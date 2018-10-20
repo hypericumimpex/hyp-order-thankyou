@@ -1,0 +1,683 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Yith Custom Thank You Page for Woocommerce Premium\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-10-11 12:15+0100\n"
+"PO-Revision-Date: 2018-04-11 15:01+0430\n"
+"Last-Translator: Digerati <me@digerati.ir>\n"
+"Language-Team: Arazweb\n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-KeywordsList: __;_x:1,2c;_e;_X\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: plugin-fw\n"
+"X-Poedit-SearchPathExcluded-1: plugin-fw_old\n"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:128
+msgctxt "Panel: page title"
+msgid "Priority"
+msgstr "اولویت"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:134
+msgctxt "Admin option: General Priority"
+msgid "Select General Priority to"
+msgstr "اولویت صفحه تشکر عمومی را انتخاب کنید"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:136
+msgctxt "Admin option description: General Priority"
+msgid ""
+"Choose which custom Thank You page must have priority over others (General, "
+"Category or Product)"
+msgstr ""
+"صفحه تشکر از پرداخت دلخواه خود را انتخاب کنید، باید اولویت بیشتری نسبت به "
+"دیگر صفحات (عمومی، دسته یا محصول) داشته باشد."
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:146
+msgctxt "yith-custom-thankyou-page-for-woocommerce"
+msgid ""
+"If you have set different custom Thank You pages for products in the cart, "
+"select which settings should have\n"
+"                    priority over others (the custom Thank You page "
+"associated with single products or categories or the general one).\n"
+"                    If you set it to Products and there are more products "
+"with different Thank You pages, the one associated with the first\n"
+"                    product in the list will be shown."
+msgstr ""
+"اگر شما صفحات تشکر از پرداخت متفاوتی را برای محصولات مورد نظر خود انتخاب "
+"کرده اید، انتخاب کنید که کدام تنظیمات باید \n"
+"اولویت بیشتری نسبت به دیگران داشته باشد (صفحه سفارشی متشکرم که مربوط به "
+"محصولات یا دسته های خاص یا عمومی است). \n"
+"اگر شما آن را به محصولات تنظیم کنید و محصولات بیشتری با صفحات متشکرم مختلف "
+"از شما وجود داشته باشد، یکی از موارد مرتبط با اولین محصول \n"
+"در فهرست نشان داده خواهد شد."
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:162
+msgctxt "Section title in Settings"
+msgid "Order Details"
+msgstr "جزئیات سفارش"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:168
+msgctxt "Admin option"
+msgid "Show header section"
+msgstr "نمایش قسمت سربرگ"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:170
+msgctxt "Admin option description"
+msgid "This section shows a main order details"
+msgstr "این قسمت جزئیات سفارش اصلی را نشان می دهد."
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:177
+msgctxt "Admin option"
+msgid "Show order table"
+msgstr "نمایش جدول سفارش"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:179
+msgctxt "Admin option description"
+msgid "This section shows all order details"
+msgstr "این قسمت جزئیات تمام سفارش را نشان می دهد."
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:186
+msgctxt "Admin option"
+msgid "Show customer details"
+msgstr "نمایش جزئیات مشتری"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:189
+msgctxt "Admin option description"
+msgid "This section shows customer details"
+msgstr "این قسمت جزئیات مشتری را نشان می دهد."
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:198
+#: panel/upsells-options.php:96
+msgid "Title font color"
+msgstr "رنگ قلم عنوان"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:205
+#: panel/upsells-options.php:104
+msgid "Title font size"
+msgstr "اندازه قلم عنوان"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:216
+#: panel/upsells-options.php:115
+msgid "Title font weight"
+msgstr "نوع قلم عنوان"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:245
+msgid "Social Box"
+msgstr "جعبه اجتماعی"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:258
+msgid "UpSells"
+msgstr "پیشنهادات دیگر (UpSells)"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:313
+msgid "Search for a product&hellip;"
+msgstr "جستجو برای یک محصول &hellip;"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:342
+msgid "Type product IDs separated by comma."
+msgstr "نوع شناسه محصول را با کاما جدا کنید."
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:398
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:618
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:685
+#: includes/class.yith-custom-thankyou-page-admin.php:96
+msgid "Custom Thank You Page"
+msgstr "صفحه تشکر از پرداخت سفارشی"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:433
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:524
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:610
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:675
+msgid "Custom Thank You Page or Url"
+msgstr "صفحه سفارشی تشکر از شما و یا لینک خارجی"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:435
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:526
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:612
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:678
+msgid "Custom Wordpress Page"
+msgstr "برگه وردپرس سفارشی"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:436
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:446
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:527
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:558
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:613
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:638
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:679
+msgid "Custom URL"
+msgstr "لینک خارجی سفارشی"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:447
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:639
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:711
+msgid "write here the full url (http://...)"
+msgstr "آدرس کامل لینک را اینجا بنویسید (http://...)"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:462
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:540
+msgid "Custom Thank You page"
+msgstr "صفحه تشکر از پرداخت سفارشی"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:463
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:541
+msgid "Select the custom Thank You page!"
+msgstr "صفحه تشکر از پرداخت سفارشی خود را انتخاب کنید!"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:561
+msgid "Write full URL ex: http://..."
+msgstr "آدرس کامل لینک را بنویسید. مثلا: http://..."
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:709
+msgid "Custom Thank You Url"
+msgstr "لینک خارجی صفحه تشکر سفارشی"
+
+#: includes/class.yith-custom-thankyou-page-admin.php:99
+#: includes/class.yith-custom-thankyou-page-admin.php:145
+msgid "Settings"
+msgstr "تنظیمات"
+
+#: includes/class.yith-custom-thankyou-page-admin.php:104
+msgid "Premium Version"
+msgstr "نسخه Premium "
+
+#: includes/class.yith-custom-thankyou-page-admin.php:196
+msgid "Plugin documentation"
+msgstr "مستندات افزونه"
+
+#: includes/class.yith-custom-thankyou-page-admin.php:200
+msgid "Help Center"
+msgstr "مرکز کمک"
+
+#: includes/class.yith-custom-thankyou-page-admin.php:207
+msgid "Discover the premium version"
+msgstr "کشف نسخه Premium "
+
+#: includes/class.yith-custom-thankyou-page-admin.php:212
+msgid "Free VS Premium"
+msgstr "نسخه VS Premium رایگان"
+
+#: includes/class.yith-custom-thankyou-page-admin.php:217
+msgid "Premium live demo"
+msgstr "نسخه نمایشی Premium"
+
+#: includes/class.yith-custom-thankyou-page-admin.php:222
+msgid "WordPress support forum"
+msgstr "انجمن پشتیبانی وردپرس"
+
+#: includes/class.yith-custom-thankyou-page-admin.php:227
+#: includes/class.yith-custom-thankyou-page-admin.php:239
+msgid "Changelog"
+msgstr "Changelog"
+
+#: includes/class.yith-custom-thankyou-page-admin.php:227
+#: includes/class.yith-custom-thankyou-page-admin.php:239
+msgid "current version"
+msgstr "نسخه فعلی"
+
+#: includes/class.yith-custom-thankyou-page-admin.php:234
+msgid "Support platform"
+msgstr "پلت فرم پشتیبانی"
+
+#: includes/class.yith-custom-thankyou-page-frontend-premium.php:543
+msgid "You may be interested in..."
+msgstr "شما ممکن است علاقمند باشید به ..."
+
+#: includes/class.yith-custom-thankyou-page-frontend.php:174
+#: templates/woocommerce/yith_ctpw_header.php:2
+#: templates/woocommerce_2.6.x/yith_ctpw_header.php:2
+msgid "Thank you. Your order has been received."
+msgstr "متشکرم. سفارش شما دریافت شد."
+
+#: init.php:49
+msgid ""
+"YITH Custom ThankYou page for Woocommerce is enabled but not effective. It "
+"requires WooCommerce in order to work."
+msgstr ""
+"صفحه ی YITH Custom ThankYou برای ووکامرس فعال است اما موثر نیست. برای کار به "
+"ووکامرس نیاز دارد."
+
+#: panel/settings-options.php:22
+msgctxt "Panel: page title"
+msgid "General settings"
+msgstr "تنظیمات عمومی"
+
+#: panel/settings-options.php:28
+msgctxt "Admin option: Enable plugin"
+msgid "Enable Custom Thank You Page"
+msgstr "فعال کردن صفحه تشکر از پرداخت سفارشی"
+
+#: panel/settings-options.php:30
+msgctxt "Admin option description: Enable plugin"
+msgid "Check this option to enable the plugin features"
+msgstr "این گزینه را انتخاب کنید تا ویژگی های افزونه را فعال سازید. "
+
+#: panel/settings-options.php:37
+msgctxt "Admin option"
+msgid "Redirect to a Custom Page or External URL"
+msgstr "ریدایرکت به یک برگه سفارشی یا لینک خارجی"
+
+#: panel/settings-options.php:41
+msgid "Custom Wrodpress Page"
+msgstr "برگه سفارشی وردپرس"
+
+#: panel/settings-options.php:42
+msgid "External URL"
+msgstr "لینک خارجی"
+
+#: panel/settings-options.php:47
+msgid "Select the General Thank You Page or External URL for all products"
+msgstr "یک صفحه تشکر عمومی یا لینک خارجی برای تمام محصولات انتخاب کنید"
+
+#: panel/settings-options.php:51
+msgctxt "Admin option"
+msgid "Select the General Page"
+msgstr "صفحه عمومی را انتخاب کنید."
+
+#: panel/settings-options.php:57
+msgid "Select the General Thank You Page for all products"
+msgstr "صفحه تشکر عمومی برای همه محصولات را انتخاب کنید."
+
+#: panel/settings-options.php:61
+msgctxt "Admin option"
+msgid "Set the Url"
+msgstr "اختصاص لینک"
+
+#: panel/settings-options.php:66
+msgid "Set the URL to redirect"
+msgstr "اختصاص لینک برای ریدایرکت"
+
+#: panel/settings-options.php:67
+msgid "write full url for ex: https://yithemes.com/"
+msgstr "آدرس کامل لینک را وارد کنید. مثلا: https://zhaket.com/"
+
+#: panel/settings-options.php:72
+msgctxt "Admin option: Custom Style"
+msgid "Custom CSS"
+msgstr "css سفارشی"
+
+#: panel/socialbox-options.php:22
+msgctxt "Section title in Settings"
+msgid "Social Box Settings"
+msgstr "تنظیمات جعبه اجتماعی"
+
+#: panel/socialbox-options.php:28
+msgctxt "Admin option"
+msgid "Enable Social Box"
+msgstr "فعال سازی جعبه اجتماعی"
+
+#: panel/socialbox-options.php:30
+msgctxt "Admin option description"
+msgid "Check this option to show the social sharing section"
+msgstr "برای نشان دادن بخش به اشتراک گذاری اجتماعی، این گزینه را انتخاب کنید."
+
+#: panel/socialbox-options.php:37
+msgctxt "Admin option"
+msgid "Enable Facebook"
+msgstr "فعال سازی فیس بوک"
+
+#: panel/socialbox-options.php:39
+msgctxt "Admin option description"
+msgid "Check this option to show Facebook sharing button"
+msgstr "این گزینه را برای نشان دادن دکمه اشتراک فیس بوک، انتخاب کنید."
+
+#: panel/socialbox-options.php:46
+msgctxt "Admin option"
+msgid "Enable Twitter"
+msgstr "فعال سازی توییتر"
+
+#: panel/socialbox-options.php:48
+msgctxt "Admin option description"
+msgid "Check this option to show Twitter sharing button"
+msgstr "این گزینه را برای نشان دادن دکمه به اشتراک گذاری توییتر، انتخاب کنید."
+
+#: panel/socialbox-options.php:55
+msgctxt "Admin option"
+msgid "Enable Google Plus"
+msgstr "فعال سازی  Google Plus"
+
+#: panel/socialbox-options.php:57
+msgctxt "Admin option description"
+msgid "Check this option to show Google sharing button"
+msgstr "این گزینه را برای نشان دادن دکمه به اشتراک گذاری Google، انتخاب کنید."
+
+#: panel/socialbox-options.php:64
+msgctxt "Admin option"
+msgid "Enable Pinterest"
+msgstr "فعال سازی Pinterest"
+
+#: panel/socialbox-options.php:66
+msgctxt "Admin option description"
+msgid "Check this option to show the Pinterest sharing button"
+msgstr ""
+"این گزینه را برای نشان دادن دکمه به اشتراک گذاری Pinterest ، انتخاب کنید."
+
+#: panel/socialbox-options.php:83
+msgctxt "Panel: page title"
+msgid "URL Shortening Settings "
+msgstr "تنظیمات کوتاه کردن آدرس URL "
+
+#: panel/socialbox-options.php:89
+msgid "URL shortening service"
+msgstr "سرویس کوتاه کردن آدرس URL "
+
+#: panel/socialbox-options.php:93
+msgid "None"
+msgstr "هیچ کدام"
+
+#: panel/socialbox-options.php:94
+msgid "Google"
+msgstr "گوگل"
+
+#: panel/socialbox-options.php:95
+msgid "Bitly"
+msgstr "Bitly"
+
+#: panel/socialbox-options.php:102
+msgid "Google API Key"
+msgstr "کلید API گوگل"
+
+#: panel/socialbox-options.php:112
+msgid "Bitly API Key"
+msgstr "کلید Bitly API"
+
+#: panel/socialbox-options.php:132
+msgctxt "Panel: page title"
+msgid "Social Box Style "
+msgstr "سبک جعبه اجتماعی"
+
+#: panel/socialbox-options.php:138
+msgid "Box title font color"
+msgstr "رنگ قلم جعبه عنوان"
+
+#: panel/socialbox-options.php:146
+msgid "Box title font size"
+msgstr "سایز قلم جعبه عنوان"
+
+#: panel/socialbox-options.php:157
+msgid "Box title font weight"
+msgstr "ضخامت قلم جعبه عنوان"
+
+#: panel/socialbox-options.php:170
+msgid "Social font color"
+msgstr "رنگ قلم "
+
+#: panel/socialbox-options.php:178
+msgid "Social font hover color"
+msgstr "رنگ حالت هاور قلم شبکه های اجتماعی"
+
+#: panel/socialbox-options.php:186
+msgid "Social font active color"
+msgstr "رنگ فعال قلم شبکه های اجتماعی"
+
+#: panel/socialbox-options.php:193
+msgid "Social font active color on hover"
+msgstr "رنگ حالت فعال قلم شبکه های اجتماعی در هاور ماوس"
+
+#: panel/socialbox-options.php:201
+msgid "Selected tab background color"
+msgstr "رنگ پس زمینه برگه انتخاب شده"
+
+#: panel/socialbox-options.php:209
+msgid "Tab main background color"
+msgstr "رنگ پس زمینه برگه اصلی"
+
+#: panel/socialbox-options.php:217
+msgid "Arrow box color"
+msgstr "رنگ جعبه جهت نما"
+
+#: panel/socialbox-options.php:225
+msgid "Sharing button color"
+msgstr "رنگ دکمه به اشتراک گذاری"
+
+#: panel/socialbox-options.php:233
+msgid "Sharing button font size"
+msgstr "اندازه قلم دکمه به اشتراک گذاری"
+
+#: panel/socialbox-options.php:244
+msgid "Sharing button font color"
+msgstr "رنگ قلم دکمه به اشتراک گذاری"
+
+#: panel/upsells-options.php:22
+msgctxt "Panel: page title"
+msgid "UpSells Settings "
+msgstr "تنظیمات UpSells "
+
+#: panel/upsells-options.php:28
+msgctxt "Admin option"
+msgid "Enable UpSelling section"
+msgstr "فعال سازی قسمت UpSelling "
+
+#: panel/upsells-options.php:30
+msgctxt "Admin option description"
+msgid "Check this option to show the up-selling section"
+msgstr "برای نشان دادن قسمت up-selling، این گزینه را انتخاب کنید."
+
+#: panel/upsells-options.php:37
+msgctxt "Admin option"
+msgid "Products per row"
+msgstr "تعداد محصولات در هر ردیف"
+
+#: panel/upsells-options.php:45
+msgctxt "Admin option"
+msgid "Products per page"
+msgstr "تعداد محصولات در هر صفحه"
+
+#: panel/upsells-options.php:52
+msgctxt "Admin option"
+msgid "Order by"
+msgstr "سفارش بر اساس"
+
+#: panel/upsells-options.php:55
+msgid "title"
+msgstr "عنوان"
+
+#: panel/upsells-options.php:56
+msgid "random"
+msgstr "به طور تصادفی"
+
+#: panel/upsells-options.php:57
+msgid "date"
+msgstr "تاریخ"
+
+#: panel/upsells-options.php:64
+msgctxt "Admin option"
+msgid "Order"
+msgstr "مرتب سازی"
+
+#: panel/upsells-options.php:75
+msgctxt "Admin option"
+msgid "Select products"
+msgstr "انتخاب محصولات"
+
+#: panel/upsells-options.php:90
+msgctxt "Section title"
+msgid "Style "
+msgstr "سبک"
+
+#: templates/woocommerce/yith_ctpw_customer_details.php:1
+#: templates/woocommerce_2.6.x/yith_ctpw_customer_details.php:1
+msgid "Customer details"
+msgstr "اطلاعات مشتری"
+
+#: templates/woocommerce/yith_ctpw_customer_details.php:4
+#: templates/woocommerce_2.6.x/yith_ctpw_customer_details.php:4
+msgid "Email:"
+msgstr "ایمیل:"
+
+#: templates/woocommerce/yith_ctpw_customer_details.php:5
+#: templates/woocommerce_2.6.x/yith_ctpw_customer_details.php:5
+msgid "Telephone:"
+msgstr "تلفن:"
+
+#: templates/woocommerce/yith_ctpw_customer_details.php:22
+#: templates/woocommerce_2.6.x/yith_ctpw_customer_details.php:22
+msgid "Billing address"
+msgstr "آدرس قبض"
+
+#: templates/woocommerce/yith_ctpw_customer_details.php:26
+#: templates/woocommerce/yith_ctpw_customer_details.php:41
+#: templates/woocommerce_2.6.x/yith_ctpw_customer_details.php:26
+#: templates/woocommerce_2.6.x/yith_ctpw_customer_details.php:41
+msgid "N/A"
+msgstr "نا موجود"
+
+#: templates/woocommerce/yith_ctpw_customer_details.php:37
+#: templates/woocommerce_2.6.x/yith_ctpw_customer_details.php:37
+msgid "Shipping address"
+msgstr "آدرس تحویل"
+
+#: templates/woocommerce/yith_ctpw_failed.php:2
+#: templates/woocommerce_2.6.x/yith_ctpw_failed.php:2
+msgid ""
+"Unfortunately your order cannot be processed as the originating bank/"
+"merchant has declined your transaction."
+msgstr ""
+"متاسفانه سفارش شما نمی تواند پردازش شود زیرا بانک مبدأ / تاجر معامله شما را "
+"رد کرده است."
+
+#: templates/woocommerce/yith_ctpw_failed.php:6
+#: templates/woocommerce_2.6.x/yith_ctpw_failed.php:6
+msgid "Please make a new attempt or go to your account page."
+msgstr "لطفا دوباره تلاش کنید یا به صفحه حساب خود بروید."
+
+#: templates/woocommerce/yith_ctpw_failed.php:8
+#: templates/woocommerce_2.6.x/yith_ctpw_failed.php:8
+msgid "Please make a new attempt."
+msgstr "لطفا دوباره تلاش کنید."
+
+#: templates/woocommerce/yith_ctpw_failed.php:12
+#: templates/woocommerce_2.6.x/yith_ctpw_failed.php:12
+msgid "Pay"
+msgstr "پرداخت"
+
+#: templates/woocommerce/yith_ctpw_failed.php:14
+#: templates/woocommerce_2.6.x/yith_ctpw_failed.php:14
+msgid "My Account"
+msgstr "حساب من"
+
+#: templates/woocommerce/yith_ctpw_header.php:4
+#: templates/woocommerce_2.6.x/yith_ctpw_header.php:4
+msgid "Order:"
+msgstr "سفارش:"
+
+#: templates/woocommerce/yith_ctpw_header.php:8
+#: templates/woocommerce_2.6.x/yith_ctpw_header.php:8
+msgid "Date:"
+msgstr "تاریخ:"
+
+#: templates/woocommerce/yith_ctpw_header.php:12
+#: templates/woocommerce_2.6.x/yith_ctpw_header.php:12
+msgid "Total:"
+msgstr "جمع کل:"
+
+#: templates/woocommerce/yith_ctpw_header.php:17
+#: templates/woocommerce_2.6.x/yith_ctpw_header.php:17
+msgid "Payment method:"
+msgstr "روش پرداخت:"
+
+#: templates/woocommerce/yith_ctpw_social_box.php:14
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:13
+msgid "Share on..."
+msgstr "اشتراک گذاری در ..."
+
+#: templates/woocommerce/yith_ctpw_social_box.php:20
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:19
+msgid "Facebook"
+msgstr "فیس بوک"
+
+#: templates/woocommerce/yith_ctpw_social_box.php:27
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:26
+msgid "Twitter"
+msgstr "توییتر"
+
+#: templates/woocommerce/yith_ctpw_social_box.php:34
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:33
+msgid "Google +"
+msgstr "گوگل  +"
+
+#: templates/woocommerce/yith_ctpw_social_box.php:41
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:40
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: templates/woocommerce/yith_ctpw_social_box.php:60
+#: templates/woocommerce/yith_ctpw_social_box.php:141
+#: templates/woocommerce/yith_ctpw_social_box.php:201
+#: templates/woocommerce/yith_ctpw_social_box.php:272
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:59
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:142
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:202
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:273
+msgid "Select the product to share"
+msgstr "محصول را برای به اشتراک گذاشتن انتخاب کنید."
+
+#: templates/woocommerce/yith_ctpw_social_box.php:101
+#: templates/woocommerce/yith_ctpw_social_box.php:103
+#: templates/woocommerce/yith_ctpw_social_box.php:172
+#: templates/woocommerce/yith_ctpw_social_box.php:230
+#: templates/woocommerce/yith_ctpw_social_box.php:234
+#: templates/woocommerce/yith_ctpw_social_box.php:308
+#: templates/woocommerce/yith_ctpw_social_box.php:310
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:101
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:103
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:173
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:231
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:235
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:309
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:311
+msgid "I've just purchased: "
+msgstr "من این محصول را خریداری کردم:"
+
+#: templates/woocommerce/yith_ctpw_social_box.php:115
+#: templates/woocommerce/yith_ctpw_social_box.php:247
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:116
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:248
+msgid "Share"
+msgstr "اشتراک گذاری"
+
+#: templates/woocommerce/yith_ctpw_social_box.php:173
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:174
+msgid "characters left"
+msgstr "کاراکترهای رها شده"
+
+#: templates/woocommerce/yith_ctpw_social_box.php:176
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:177
+msgid "Tweet"
+msgstr "Tweet"
+
+#: templates/woocommerce/yith_ctpw_social_box.php:324
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:325
+msgid "Pin it"
+msgstr "Pin it"
+
+#: templates/woocommerce/yith_ctpw_table.php:6
+#: templates/woocommerce_2.6.x/yith_ctpw_table.php:6
+msgid "Order details"
+msgstr "جزئیات سفارش"
+
+#: templates/woocommerce/yith_ctpw_table.php:11
+#: templates/woocommerce_2.6.x/yith_ctpw_table.php:11
+msgid "Product"
+msgstr "محصول"
+
+#: templates/woocommerce/yith_ctpw_table.php:12
+#: templates/woocommerce_2.6.x/yith_ctpw_table.php:12
+msgid "Total"
+msgstr "جمع کل"
+
+#: templates/woocommerce/yith_ctpw_table.php:49
+#: templates/woocommerce_2.6.x/yith_ctpw_table.php:46
+#, php-format
+msgid "Download file %s"
+msgstr "دانلود فایل %s"
+
+#~ msgid "https://zhaket.com/store/arazweb/"
+#~ msgstr ""
+#~ "فروش انحصاری نسخه اورجینال این محصول صرفا توسط آراز وب در ژاکت انجام می "
+#~ "گیرد."

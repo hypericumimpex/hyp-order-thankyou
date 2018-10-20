@@ -1,0 +1,837 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Yith Custom Thank You Page for Woocommerce Premium\n"
+"POT-Creation-Date: 2018-08-21 14:49+0100\n"
+"PO-Revision-Date: 2018-08-29 15:16+0100\n"
+"Last-Translator: \n"
+"Language-Team: Your Inspiration Web\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.7\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_x:1,2c;_e;_X\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: plugin-fw\n"
+"X-Poedit-SearchPathExcluded-1: plugin-fw_old\n"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:137
+msgctxt "Panel: page title"
+msgid "Priority"
+msgstr "Prioriteit"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:143
+msgctxt "Admin option: General Priority"
+msgid "Select General Priority to"
+msgstr "Selecteer Algemene Prioriteit voor"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:145
+msgctxt "Admin option description: General Priority"
+msgid ""
+"Choose which custom Thank You page must have priority over others (General, "
+"Category or Product)"
+msgstr ""
+"Kies welke custom Thank You pagina prioriteit moet hebben over anderen "
+"(Algemeen, Categorie of Product)"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:156
+msgctxt "yith-custom-thankyou-page-for-woocommerce"
+msgid ""
+"If you have set different custom Thank You pages for products in the cart, "
+"select which settings should have\n"
+"                    priority over others (the custom Thank You page "
+"associated with single products or categories or the general one).\n"
+"                    If you set it to Products and there are more products "
+"with different Thank You pages, the one associated with the first\n"
+"                    product in the list will be shown."
+msgstr ""
+"Als je een andere custom Thank You pagina selecteerd, selecteer dan welke "
+"instelling voorhang moet hebben\n"
+" over de ander (De custom Thank You pagina geassocieerd met single products "
+"of categories van de algemene). Als je producten instelt en er zijn meerdere "
+"producten met Thank You paginas, is de gene met de eerste\n"
+" product in de lijst de pagina die weergegeven word.\n"
+" "
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:172
+msgctxt "Section title in Settings"
+msgid "Order Details"
+msgstr "Details van bestelling"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:178
+msgctxt "Admin option"
+msgid "Show header section"
+msgstr "Weergeef header sectie"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:180
+msgctxt "Admin option description"
+msgid "This section shows a main order details"
+msgstr "Deze sectie weergeeft de details van de hoofdbestelling"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:187
+msgctxt "Admin option"
+msgid "Show order table"
+msgstr "Weergeef tabel van de bestelling"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:189
+msgctxt "Admin option description"
+msgid "This section shows all order details"
+msgstr "Deze sectie weergeeft alle bestelinformatie"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:196
+msgctxt "Admin option"
+msgid "Show customer details"
+msgstr "Weergeef klantinformatie"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:199
+msgctxt "Admin option description"
+msgid "This section shows customer details"
+msgstr "Deze sectie weergeeft klantinformatie"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:208
+#: panel/upsells-options.php:96
+msgid "Title font color"
+msgstr "Lettertype kleur van de titel"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:215
+#: panel/upsells-options.php:104
+msgid "Title font size"
+msgstr "Titel grote"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:226
+#: panel/upsells-options.php:115
+msgid "Title font weight"
+msgstr "Gewicht van titel"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:328
+msgctxt "Panel: page title"
+msgid "Payment Methods "
+msgstr "Betaalmethoden"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:356
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:688
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:779
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:866
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:932
+#: panel/settings-options.php:41
+msgid "Custom Wordpress Page"
+msgstr "Custom Wordpress Pagina"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:357
+#: panel/settings-options.php:42
+msgid "External URL"
+msgstr "Externe URL"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:365
+msgid "Select the General Thank You Page or External URL"
+msgstr ""
+"Selecteer de Algemene Thank You Page of Externe URL voor alle producten"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:382
+#: panel/settings-options.php:67
+msgid "write full url for ex: https://yithemes.com/"
+msgstr "schrijf volledige url bijvoorbeeld: https://yithemes.com/"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:468
+msgid "Social Box"
+msgstr "Social Box"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:482
+msgid "UpSells"
+msgstr "UpSells"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:496
+msgid "PDF"
+msgstr "PDF"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:509
+msgid "Payment Methods"
+msgstr "Betaalmethoden"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:564
+msgid "Search for a product&hellip;"
+msgstr "Zoek voor een product&hellip;"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:593
+msgid "Type product IDs separated by comma."
+msgstr "Type product IDs gescheiden door een komma."
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:651
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:872
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:939
+msgid "Custom Thank You Page"
+msgstr "Custom Thank You Pagina"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:686
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:777
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:864
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:929
+msgid "Custom Thank You Page or Url"
+msgstr "Custom Thank You Pagina Url"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:689
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:699
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:780
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:811
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:867
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:892
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:933
+msgid "Custom URL"
+msgstr "Custom URL"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:700
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:893
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:965
+msgid "write here the full url (http://...)"
+msgstr "schrijf hier de volledige url (http://…)"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:715
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:793
+msgid "Custom Thank You page"
+msgstr "Custom Thank You page"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:794
+msgid "Select the custom Thank You page!"
+msgstr "Selecteer de custom Thank You pagina!"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:814
+msgid "Write full URL ex: http://..."
+msgstr "Schrijf volledige URL voorbeeld: http://…"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:963
+msgid "Custom Thank You Url"
+msgstr "Custom Thank You Url"
+
+#: includes/class.yith-custom-thankyou-page-admin.php:96
+msgid "Settings"
+msgstr "Instellingen"
+
+#: includes/class.yith-custom-thankyou-page-admin.php:101
+msgid "Premium Version"
+msgstr "Premium Versie"
+
+#: includes/class.yith-custom-thankyou-page-admin.php:174
+msgid "Plugin documentation"
+msgstr "Plugin documentatie"
+
+#: includes/class.yith-custom-thankyou-page-admin.php:178
+msgid "Help Center"
+msgstr "Helpcentrum"
+
+#: includes/class.yith-custom-thankyou-page-admin.php:185
+msgid "Discover the premium version"
+msgstr "Ontdek de premium versie"
+
+#: includes/class.yith-custom-thankyou-page-admin.php:190
+msgid "Free VS Premium"
+msgstr "Gratis VS Premium"
+
+#: includes/class.yith-custom-thankyou-page-admin.php:195
+msgid "Premium live demo"
+msgstr "Premium live demo"
+
+#: includes/class.yith-custom-thankyou-page-admin.php:200
+msgid "WordPress support forum"
+msgstr "WordPress support forum"
+
+#: includes/class.yith-custom-thankyou-page-admin.php:205
+#: includes/class.yith-custom-thankyou-page-admin.php:217
+msgid "Changelog"
+msgstr "Changelog"
+
+#: includes/class.yith-custom-thankyou-page-admin.php:205
+#: includes/class.yith-custom-thankyou-page-admin.php:217
+msgid "current version"
+msgstr "huidige versie"
+
+#: includes/class.yith-custom-thankyou-page-admin.php:212
+msgid "Support platform"
+msgstr "Support platform"
+
+#: includes/class.yith-custom-thankyou-page-frontend-premium.php:624
+msgid "You may be interested in..."
+msgstr "U zou ook geïnteresseerd kunnen zijn in.."
+
+#: includes/class.yith-custom-thankyou-page-frontend.php:176
+#: templates/ctpw_pdf/order_infos_pdf_template_order_header.php:7
+#: templates/woocommerce/yith_ctpw_header.php:6
+#: templates/woocommerce_2.6.x/yith_ctpw_header.php:2
+msgid "Thank you. Your order has been received."
+msgstr "Dank u, U order is ontvangen."
+
+#: includes/class.yith-custom-thankyou-page-pdf.php:146
+#: includes/class.yith-custom-thankyou-page-pdf.php:266
+#: panel/pdf-options.php:54
+msgid "Save as PDF"
+msgstr "Opslaan als PDF"
+
+#: init.php:40
+msgid ""
+"YITH Custom ThankYou page for Woocommerce is enabled but not effective. It "
+"requires WooCommerce in order to work."
+msgstr ""
+"YITH Custom ThankYou page for Woocommerce is ingeschakeld maar niet "
+"effectief. Het heeft WooCommerce nodig om te kunnen functioneren."
+
+#: panel/pdf-options.php:22
+msgctxt "Panel: page title"
+msgid "PDF Settings "
+msgstr "PDF instellingen "
+
+#: panel/pdf-options.php:28
+msgctxt "Admin option"
+msgid "Enable PDF button"
+msgstr "PDF knop inschakelen"
+
+#: panel/pdf-options.php:31
+msgctxt "Admin option description"
+msgid "Check this option to show the PDF button on Custom Thank You Page"
+msgstr ""
+"Selecteer deze optie om de PDF knop te tonen in de aangepaste bedankt pagina"
+
+#: panel/pdf-options.php:38
+msgctxt "Admin option"
+msgid "Use as Shortcode"
+msgstr "Gebruik als shortcode"
+
+#: panel/pdf-options.php:41
+msgctxt "Admin option description"
+msgid ""
+"If this option is checked the button will show only when you add the "
+"shortcode to the page [yith_ctpw_pdf_button]"
+msgstr ""
+"Als deze optie is geselecteerd zal de knop alleen worden weergegeven als u "
+"de shortcode toevoegt aan de pagina [yith_ctpw_pdf_button]"
+
+#: panel/pdf-options.php:48
+msgctxt "Admin option"
+msgid "PDF Button Label"
+msgstr "PDF knop label"
+
+#: panel/pdf-options.php:51
+msgctxt "Admin option description"
+msgid "set the PDF button label"
+msgstr "De PDF knop label instellen"
+
+#: panel/pdf-options.php:58
+msgctxt "Admin option"
+msgid "PDF Button Background Color"
+msgstr "PDF knop achtergrondkleur"
+
+#: panel/pdf-options.php:66
+msgctxt "Admin option"
+msgid "PDF Button Background Color on Hover"
+msgstr "PDF knop achtergrondkleur tijdens muis hover"
+
+#: panel/pdf-options.php:74
+msgctxt "Admin option"
+msgid "PDF Button Text Color"
+msgstr "PDF knop tekstkleur"
+
+#: panel/pdf-options.php:82
+msgctxt "Admin option"
+msgid "PDF Button Text Color on Hover"
+msgstr "PDF knop tekstkleur tijdens muis hover"
+
+#: panel/pdf-options.php:90
+msgctxt "Admin option"
+msgid "Show Logo on PDF"
+msgstr "Toon logo in de PDF"
+
+#: panel/pdf-options.php:93
+msgctxt "Admin option description"
+msgid "Check this option to show a custom logo image on PDF"
+msgstr ""
+"Selecteer deze optie om een aangepaste logo afbeelding te tonen in de PDF"
+
+#: panel/pdf-options.php:100
+msgctxt "Admin option"
+msgid "Logo"
+msgstr "Logo"
+
+#: panel/pdf-options.php:103
+msgctxt "Admin option description"
+msgid "Upload or select a logo image (available extensions: jpg, png)"
+msgstr ""
+"Upload of selecteer een logo afbeelding (beschikbare formaten: jpg, png)"
+
+#: panel/pdf-options.php:110
+msgctxt "Admin option"
+msgid "Max Logo Width"
+msgstr "Max logo breedte"
+
+#: panel/pdf-options.php:113
+msgctxt "Admin option description"
+msgid "set the max size for the logo image in px"
+msgstr "stel een maximum afmeting in voor de logo afbeelding in px"
+
+#: panel/pdf-options.php:120
+msgctxt "Admin option"
+msgid "Show Order Header Table"
+msgstr "Toon bestelling header tabel"
+
+#: panel/pdf-options.php:123
+msgctxt "Admin option description"
+msgid "Show Order Header Table"
+msgstr "Toon bestelling header tabel"
+
+#: panel/pdf-options.php:130
+msgctxt "Admin option"
+msgid "Show Order Details Table"
+msgstr "Toon bestelling details tabel"
+
+#: panel/pdf-options.php:133
+msgctxt "Admin option description"
+msgid "Show Order Details Table"
+msgstr "Toon bestelling details tabel"
+
+#: panel/pdf-options.php:140
+msgctxt "Admin option"
+msgid "Footer Text"
+msgstr "Footer Tekst"
+
+#: panel/pdf-options.php:143
+msgctxt "Admin option description"
+msgid "Add custom message to PDF footer"
+msgstr "Voeg aangepast bericht to aan PDF footer"
+
+#: panel/settings-options.php:22
+msgctxt "Panel: page title"
+msgid "General settings"
+msgstr "Algemene instellingen"
+
+#: panel/settings-options.php:28
+msgctxt "Admin option: Enable plugin"
+msgid "Enable Custom Thank You Page"
+msgstr "Schakel Custom Thank You Page in"
+
+#: panel/settings-options.php:30
+msgctxt "Admin option description: Enable plugin"
+msgid "Check this option to enable the plugin features"
+msgstr "Vink deze optie aan om de features van deze plugin in te schakelen"
+
+#: panel/settings-options.php:37
+msgctxt "Admin option"
+msgid "Redirect to a Custom Page or External URL"
+msgstr "Doorsturen naar een Custom Pagina of Externe URL"
+
+#: panel/settings-options.php:47
+msgid "Select the General Thank You Page or External URL for all products"
+msgstr ""
+"Selecteer de Algemene Thank You Page of Externe URL voor alle producten"
+
+#: panel/settings-options.php:51
+msgctxt "Admin option"
+msgid "Select the General Page"
+msgstr "Selecteer de Algemene Pagina"
+
+#: panel/settings-options.php:57
+msgid "Select the General Thank You Page for all products"
+msgstr "Selecteer de Algemene Thank You Pagina voor alle producten"
+
+#: panel/settings-options.php:61
+msgctxt "Admin option"
+msgid "Set the Url"
+msgstr "Zet de Url"
+
+#: panel/settings-options.php:66
+msgid "Set the URL to redirect"
+msgstr "Zet de URL om door te sturen"
+
+#: panel/settings-options.php:72
+msgctxt "Admin option: Custom Style"
+msgid "Custom CSS"
+msgstr "Custom CSS"
+
+#: panel/socialbox-options.php:22
+msgctxt "Section title in Settings"
+msgid "Social Box Settings"
+msgstr "Social Box Instellingen"
+
+#: panel/socialbox-options.php:28
+msgctxt "Admin option"
+msgid "Enable Social Box"
+msgstr "Social Box inschakelen"
+
+#: panel/socialbox-options.php:30
+msgctxt "Admin option description"
+msgid "Check this option to show the social sharing section"
+msgstr "Vink deze optie aan om de sociale sharing sectie weer te geven"
+
+#: panel/socialbox-options.php:37
+msgctxt "Admin option"
+msgid "Enable Facebook"
+msgstr "Stel Facebook in"
+
+#: panel/socialbox-options.php:39
+msgctxt "Admin option description"
+msgid "Check this option to show Facebook sharing button"
+msgstr "Vink deze optie om de Facebook sharing knop weer te geven"
+
+#: panel/socialbox-options.php:46
+msgctxt "Admin option"
+msgid "Enable Twitter"
+msgstr "Schakel Twitter in"
+
+#: panel/socialbox-options.php:48
+msgctxt "Admin option description"
+msgid "Check this option to show Twitter sharing button"
+msgstr "Vink deze optie aan om de Twitter sharing knop weer te geven"
+
+#: panel/socialbox-options.php:55
+msgctxt "Admin option"
+msgid "Enable Google Plus"
+msgstr "Schakel Google Plus in"
+
+#: panel/socialbox-options.php:57
+msgctxt "Admin option description"
+msgid "Check this option to show Google sharing button"
+msgstr "Vink deze optie aan om de Google sharing knop weer te geven"
+
+#: panel/socialbox-options.php:64
+msgctxt "Admin option"
+msgid "Enable Pinterest"
+msgstr "Schakel Pinterest in"
+
+#: panel/socialbox-options.php:66
+msgctxt "Admin option description"
+msgid "Check this option to show the Pinterest sharing button"
+msgstr "Vink deze optie aan om de Pinterest sharing knop weer te geven"
+
+#: panel/socialbox-options.php:83
+msgctxt "Panel: page title"
+msgid "URL Shortening Settings "
+msgstr "URL Shortening Instellingen "
+
+#: panel/socialbox-options.php:89
+msgid "URL shortening service"
+msgstr "URL shortening service"
+
+#: panel/socialbox-options.php:93
+msgid "None"
+msgstr "Geen"
+
+#: panel/socialbox-options.php:94
+msgid "Google"
+msgstr "Google"
+
+#: panel/socialbox-options.php:95
+msgid "Bitly"
+msgstr "Bitly"
+
+#: panel/socialbox-options.php:102
+msgid "Google API Key"
+msgstr "Google API Sleutel"
+
+#: panel/socialbox-options.php:112
+msgid "Bitly API Key"
+msgstr "Bitly API Sleutel"
+
+#: panel/socialbox-options.php:132
+msgctxt "Panel: page title"
+msgid "Social Box Style "
+msgstr "Social Box Stijl "
+
+#: panel/socialbox-options.php:138
+msgid "Box title font color"
+msgstr "Box letter kleur"
+
+#: panel/socialbox-options.php:146
+msgid "Box title font size"
+msgstr "Box titel lettergrootte"
+
+#: panel/socialbox-options.php:157
+msgid "Box title font weight"
+msgstr "Box titel gewicht"
+
+#: panel/socialbox-options.php:170
+msgid "Social font color"
+msgstr "Social font kleur"
+
+#: panel/socialbox-options.php:178
+msgid "Social font hover color"
+msgstr "Social font hover kleur"
+
+#: panel/socialbox-options.php:186
+msgid "Social font active color"
+msgstr "Social font actieve kleur"
+
+#: panel/socialbox-options.php:193
+msgid "Social font active color on hover"
+msgstr "Social font actieve kleur op hover"
+
+#: panel/socialbox-options.php:201
+msgid "Selected tab background color"
+msgstr "Selecteer tab achtergrondkleur"
+
+#: panel/socialbox-options.php:209
+msgid "Tab main background color"
+msgstr "Tab behoud achtergrondkleur"
+
+#: panel/socialbox-options.php:217
+msgid "Arrow box color"
+msgstr "Arrow box kleur"
+
+#: panel/socialbox-options.php:225
+msgid "Sharing button color"
+msgstr "Deel knop kleur"
+
+#: panel/socialbox-options.php:233
+msgid "Sharing button font size"
+msgstr "Deel knop grootte"
+
+#: panel/socialbox-options.php:244
+msgid "Sharing button font color"
+msgstr "Deel knop font kleur"
+
+#: panel/upsells-options.php:22
+msgctxt "Panel: page title"
+msgid "UpSells Settings "
+msgstr "UpSells Instellingen "
+
+#: panel/upsells-options.php:28
+msgctxt "Admin option"
+msgid "Enable UpSelling section"
+msgstr "Schakel UpSelling in"
+
+#: panel/upsells-options.php:30
+msgctxt "Admin option description"
+msgid "Check this option to show the up-selling section"
+msgstr "Vink deze optie aan om de up-selling sectie weer te geven"
+
+#: panel/upsells-options.php:37
+msgctxt "Admin option"
+msgid "Products per row"
+msgstr "Producten per rij"
+
+#: panel/upsells-options.php:45
+msgctxt "Admin option"
+msgid "Products per page"
+msgstr "Producten per pagina"
+
+#: panel/upsells-options.php:52
+msgctxt "Admin option"
+msgid "Order by"
+msgstr "Order bij"
+
+#: panel/upsells-options.php:55
+msgid "title"
+msgstr "titel"
+
+#: panel/upsells-options.php:56
+msgid "random"
+msgstr "willekeurig"
+
+#: panel/upsells-options.php:57
+msgid "date"
+msgstr "datum"
+
+#: panel/upsells-options.php:64
+msgctxt "Admin option"
+msgid "Order"
+msgstr "Bestelling"
+
+#: panel/upsells-options.php:75
+msgctxt "Admin option"
+msgid "Select products"
+msgstr "Selecteer producten"
+
+#: panel/upsells-options.php:90
+msgctxt "Section title"
+msgid "Style "
+msgstr "Stijl "
+
+#: templates/ctpw_pdf/order_infos_pdf_template_order_header.php:11
+#: templates/woocommerce/yith_ctpw_table.php:9
+#: templates/woocommerce_2.6.x/yith_ctpw_table.php:6
+msgid "Order details"
+msgstr "Details van de bestelling"
+
+#: templates/ctpw_pdf/order_infos_pdf_template_order_header.php:16
+#: templates/woocommerce/yith_ctpw_header.php:8
+#: templates/woocommerce_2.6.x/yith_ctpw_header.php:4
+msgid "Order:"
+msgstr "Bestelling:"
+
+#: templates/ctpw_pdf/order_infos_pdf_template_order_header.php:17
+#: templates/woocommerce/yith_ctpw_header.php:12
+#: templates/woocommerce_2.6.x/yith_ctpw_header.php:8
+msgid "Date:"
+msgstr "Datum:"
+
+#: templates/ctpw_pdf/order_infos_pdf_template_order_header.php:18
+#: templates/woocommerce/yith_ctpw_header.php:16
+#: templates/woocommerce_2.6.x/yith_ctpw_header.php:12
+msgid "Total:"
+msgstr "Totaal:"
+
+#: templates/ctpw_pdf/order_infos_pdf_template_order_header.php:21
+#: templates/woocommerce/yith_ctpw_header.php:21
+#: templates/woocommerce_2.6.x/yith_ctpw_header.php:17
+msgid "Payment method:"
+msgstr "Betaalmethode:"
+
+#: templates/ctpw_pdf/order_infos_pdf_template_order_table.php:10
+#: templates/woocommerce/yith_ctpw_table.php:18
+#: templates/woocommerce_2.6.x/yith_ctpw_table.php:11
+msgid "Product"
+msgstr "Product"
+
+#: templates/ctpw_pdf/order_infos_pdf_template_order_table.php:11
+#: templates/woocommerce/yith_ctpw_table.php:19
+#: templates/woocommerce_2.6.x/yith_ctpw_table.php:12
+msgid "Total"
+msgstr "Totaal"
+
+#: templates/ctpw_pdf/order_infos_pdf_template_order_table.php:58
+#: templates/woocommerce/yith_ctpw_table.php:70
+#: templates/woocommerce_2.6.x/yith_ctpw_table.php:46
+#, php-format
+msgid "Download file %s"
+msgstr "Download file %s"
+
+#: templates/ctpw_pdf/order_infos_pdf_template_order_table.php:101
+#: templates/woocommerce/yith_ctpw_table.php:113
+msgid "Note:"
+msgstr "Notitie:"
+
+#: templates/woocommerce/yith_ctpw_customer_details.php:4
+#: templates/woocommerce_2.6.x/yith_ctpw_customer_details.php:1
+msgid "Customer details"
+msgstr "Klant gegevens"
+
+#: templates/woocommerce/yith_ctpw_customer_details.php:8
+#: templates/woocommerce_2.6.x/yith_ctpw_customer_details.php:4
+msgid "Email:"
+msgstr "Email:"
+
+#: templates/woocommerce/yith_ctpw_customer_details.php:9
+#: templates/woocommerce_2.6.x/yith_ctpw_customer_details.php:5
+msgid "Telephone:"
+msgstr "Telefoon:"
+
+#: templates/woocommerce/yith_ctpw_customer_details.php:26
+#: templates/woocommerce_2.6.x/yith_ctpw_customer_details.php:22
+msgid "Billing address"
+msgstr "Facturatie adres"
+
+#: templates/woocommerce/yith_ctpw_customer_details.php:30
+#: templates/woocommerce/yith_ctpw_customer_details.php:45
+#: templates/woocommerce_2.6.x/yith_ctpw_customer_details.php:26
+#: templates/woocommerce_2.6.x/yith_ctpw_customer_details.php:41
+msgid "N/A"
+msgstr "N/A"
+
+#: templates/woocommerce/yith_ctpw_customer_details.php:41
+#: templates/woocommerce_2.6.x/yith_ctpw_customer_details.php:37
+msgid "Shipping address"
+msgstr "Adres"
+
+#: templates/woocommerce/yith_ctpw_failed.php:2
+#: templates/woocommerce_2.6.x/yith_ctpw_failed.php:2
+msgid ""
+"Unfortunately your order cannot be processed as the originating bank/"
+"merchant has declined your transaction."
+msgstr ""
+"Helaas kunnen we u bestelling niet versturen, omdat de transactie is "
+"geweigerd door de desbetreffende bank."
+
+#: templates/woocommerce/yith_ctpw_failed.php:6
+#: templates/woocommerce_2.6.x/yith_ctpw_failed.php:6
+msgid "Please make a new attempt or go to your account page."
+msgstr "Probeer het alstublieft nogmaals of ga naar uw account pagina."
+
+#: templates/woocommerce/yith_ctpw_failed.php:8
+#: templates/woocommerce_2.6.x/yith_ctpw_failed.php:8
+msgid "Please make a new attempt."
+msgstr "Probeer het alstublieft nogmaals."
+
+#: templates/woocommerce/yith_ctpw_failed.php:12
+#: templates/woocommerce_2.6.x/yith_ctpw_failed.php:12
+msgid "Pay"
+msgstr "Betaal"
+
+#: templates/woocommerce/yith_ctpw_failed.php:14
+#: templates/woocommerce_2.6.x/yith_ctpw_failed.php:14
+msgid "My Account"
+msgstr "Mijn Account"
+
+#: templates/woocommerce/yith_ctpw_social_box.php:18
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:13
+msgid "Share on..."
+msgstr "Delen op..."
+
+#: templates/woocommerce/yith_ctpw_social_box.php:25
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:19
+msgid "Facebook"
+msgstr "Facebook"
+
+#: templates/woocommerce/yith_ctpw_social_box.php:32
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:26
+msgid "Twitter"
+msgstr "Twitter"
+
+#: templates/woocommerce/yith_ctpw_social_box.php:39
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:33
+msgid "Google +"
+msgstr "Google +"
+
+#: templates/woocommerce/yith_ctpw_social_box.php:46
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:40
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: templates/woocommerce/yith_ctpw_social_box.php:65
+#: templates/woocommerce/yith_ctpw_social_box.php:153
+#: templates/woocommerce/yith_ctpw_social_box.php:213
+#: templates/woocommerce/yith_ctpw_social_box.php:292
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:59
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:142
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:202
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:273
+msgid "Select the product to share"
+msgstr "Selecteer het product wat u wilt delen"
+
+#: templates/woocommerce/yith_ctpw_social_box.php:106
+#: templates/woocommerce/yith_ctpw_social_box.php:108
+#: templates/woocommerce/yith_ctpw_social_box.php:184
+#: templates/woocommerce/yith_ctpw_social_box.php:242
+#: templates/woocommerce/yith_ctpw_social_box.php:246
+#: templates/woocommerce/yith_ctpw_social_box.php:328
+#: templates/woocommerce/yith_ctpw_social_box.php:330
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:101
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:103
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:173
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:231
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:235
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:309
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:311
+msgid "I've just purchased: "
+msgstr "Ik heb dit net gekocht: "
+
+#: templates/woocommerce/yith_ctpw_social_box.php:127
+#: templates/woocommerce/yith_ctpw_social_box.php:267
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:116
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:248
+msgid "Share"
+msgstr "Delen"
+
+#: templates/woocommerce/yith_ctpw_social_box.php:185
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:174
+msgid "characters left"
+msgstr "letters over"
+
+#: templates/woocommerce/yith_ctpw_social_box.php:188
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:177
+msgid "Tweet"
+msgstr "Tweet"
+
+#: templates/woocommerce/yith_ctpw_social_box.php:353
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:325
+msgid "Pin it"
+msgstr "Pin it"
+
+#~ msgid "Custom Wrodpress Page"
+#~ msgstr "Custom WordPress Pagina"

@@ -1,0 +1,1144 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Yith Custom Thank You Page for Woocommerce Premium\n"
+"POT-Creation-Date: 2018-08-21 14:49+0100\n"
+"PO-Revision-Date: 2018-08-21 14:50+0100\n"
+"Last-Translator: Antonio Mercurio <antonio.mercurio@gmail.com>\n"
+"Language-Team: Your Inspiration Web\n"
+"Language: it_IT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.7\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_x:1,2c;_e;_X\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: plugin-fw\n"
+"X-Poedit-SearchPathExcluded-1: plugin-fw_old\n"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:137
+msgctxt "Panel: page title"
+msgid "Priority"
+msgstr "Priorità"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:143
+msgctxt "Admin option: General Priority"
+msgid "Select General Priority to"
+msgstr "Seleziona priorità generale per"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:145
+msgctxt "Admin option description: General Priority"
+msgid ""
+"Choose which custom Thank You page must have priority over others (General, "
+"Category or Product)"
+msgstr ""
+"Scegli a quale pagina di ringraziamento dare priorità nel caso se ne "
+"applichi più di una allo stesso acquisto (Generale, Categoria o Prodotto)"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:156
+msgctxt "yith-custom-thankyou-page-for-woocommerce"
+msgid ""
+"If you have set different custom Thank You pages for products in the cart, "
+"select which settings should have\n"
+"                    priority over others (the custom Thank You page "
+"associated with single products or categories or the general one).\n"
+"                    If you set it to Products and there are more products "
+"with different Thank You pages, the one associated with the first\n"
+"                    product in the list will be shown."
+msgstr ""
+"Se hai impostato diverse pagine di ringraziamento personalizzate per i "
+"prodotti nel carrello, seleziona quale deve avere priorità  sulle altre (la "
+"pagina di ringraziamento associate ai singoli prodotti, alle categorie o "
+"quella generale).\n"
+"Se scegli quella per i Prodotti e sono presenti diversi prodotti e ci sono "
+"due o più prodotti con diverse pagine di ringraziamento personalizzate, sarà "
+"mostrata la pagina di ringraziamento del primo prodotto in elenco."
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:172
+msgctxt "Section title in Settings"
+msgid "Order Details"
+msgstr "Dettagli Ordine"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:178
+msgctxt "Admin option"
+msgid "Show header section"
+msgstr "Mostra Intestazione"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:180
+msgctxt "Admin option description"
+msgid "This section shows a main order details"
+msgstr "Questa sezione mostra i dettagli principali dell'ordine"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:187
+msgctxt "Admin option"
+msgid "Show order table"
+msgstr "Mostra tabella ordine"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:189
+msgctxt "Admin option description"
+msgid "This section shows all order details"
+msgstr "Questa sezione mostra tutti i dettagli"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:196
+msgctxt "Admin option"
+msgid "Show customer details"
+msgstr "Mostra dettagli cliente"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:199
+msgctxt "Admin option description"
+msgid "This section shows customer details"
+msgstr "Questa sezione mostra i dettagli del cliente"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:208
+#: panel/upsells-options.php:96
+msgid "Title font color"
+msgstr "Colore carattere del titolo"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:215
+#: panel/upsells-options.php:104
+msgid "Title font size"
+msgstr "Dimensione carattere del titolo"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:226
+#: panel/upsells-options.php:115
+msgid "Title font weight"
+msgstr "Peso carattere del titolo"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:328
+msgctxt "Panel: page title"
+msgid "Payment Methods "
+msgstr "Metodi di pagamento"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:356
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:688
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:779
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:866
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:932
+#: panel/settings-options.php:41
+msgid "Custom Wordpress Page"
+msgstr "Pagina di ringraziamento personalizzata"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:357
+#: panel/settings-options.php:42
+msgid "External URL"
+msgstr "URL esterno"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:365
+msgid "Select the General Thank You Page or External URL"
+msgstr ""
+"Seleziona la pagina di ringraziamento generale o un URL esterno per tutti i "
+"prodotti"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:382
+#: panel/settings-options.php:67
+msgid "write full url for ex: https://yithemes.com/"
+msgstr "Scrivi l'URL completo ex: https://yithemes.com/"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:468
+msgid "Social Box"
+msgstr "Social network"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:482
+msgid "UpSells"
+msgstr "Upsell"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:496
+msgid "PDF"
+msgstr "PDF"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:509
+msgid "Payment Methods"
+msgstr "Metodi di pagamento:"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:564
+msgid "Search for a product&hellip;"
+msgstr "Cerca un prodotto&hellip;"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:593
+msgid "Type product IDs separated by comma."
+msgstr "Scrivi gli ID dei prodotti separati dalla virgola."
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:651
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:872
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:939
+msgid "Custom Thank You Page"
+msgstr "Custom Thank You Page"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:686
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:777
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:864
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:929
+msgid "Custom Thank You Page or Url"
+msgstr "Thank You Page o URL personalizzato"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:689
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:699
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:780
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:811
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:867
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:892
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:933
+msgid "Custom URL"
+msgstr "URL Personalizzato"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:700
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:893
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:965
+msgid "write here the full url (http://...)"
+msgstr "scrivi qui l'URL completo (http://...)"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:715
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:793
+msgid "Custom Thank You page"
+msgstr "Custom Thank You Page"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:794
+msgid "Select the custom Thank You page!"
+msgstr "Seleziona la tua pagina di ringraziamento!"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:814
+msgid "Write full URL ex: http://..."
+msgstr "Scrive l'URL completo ex: http://..."
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:963
+msgid "Custom Thank You Url"
+msgstr "Custom Thank You Url"
+
+#: includes/class.yith-custom-thankyou-page-admin.php:96
+msgid "Settings"
+msgstr "Impostazioni"
+
+#: includes/class.yith-custom-thankyou-page-admin.php:101
+msgid "Premium Version"
+msgstr "Versione premium"
+
+#: includes/class.yith-custom-thankyou-page-admin.php:174
+msgid "Plugin documentation"
+msgstr "Documentazione Plugin"
+
+#: includes/class.yith-custom-thankyou-page-admin.php:178
+msgid "Help Center"
+msgstr "Centro assistenza"
+
+#: includes/class.yith-custom-thankyou-page-admin.php:185
+msgid "Discover the premium version"
+msgstr "Scopri la versione premium"
+
+#: includes/class.yith-custom-thankyou-page-admin.php:190
+msgid "Free VS Premium"
+msgstr "Free VS Premium"
+
+#: includes/class.yith-custom-thankyou-page-admin.php:195
+msgid "Premium live demo"
+msgstr "Live demo premium"
+
+#: includes/class.yith-custom-thankyou-page-admin.php:200
+msgid "WordPress support forum"
+msgstr "Forum di supporto su WordPress"
+
+#: includes/class.yith-custom-thankyou-page-admin.php:205
+#: includes/class.yith-custom-thankyou-page-admin.php:217
+msgid "Changelog"
+msgstr "Changelog"
+
+#: includes/class.yith-custom-thankyou-page-admin.php:205
+#: includes/class.yith-custom-thankyou-page-admin.php:217
+msgid "current version"
+msgstr "versione corrente"
+
+#: includes/class.yith-custom-thankyou-page-admin.php:212
+msgid "Support platform"
+msgstr "Piattaforma di supporto"
+
+#: includes/class.yith-custom-thankyou-page-frontend-premium.php:624
+msgid "You may be interested in..."
+msgstr "Potrebbero interessarti..."
+
+#: includes/class.yith-custom-thankyou-page-frontend.php:176
+#: templates/ctpw_pdf/order_infos_pdf_template_order_header.php:7
+#: templates/woocommerce/yith_ctpw_header.php:6
+#: templates/woocommerce_2.6.x/yith_ctpw_header.php:2
+msgid "Thank you. Your order has been received."
+msgstr "Grazie. Abbiamo ricevuto il tuo ordine."
+
+#: includes/class.yith-custom-thankyou-page-pdf.php:146
+#: includes/class.yith-custom-thankyou-page-pdf.php:266
+#: panel/pdf-options.php:54
+msgid "Save as PDF"
+msgstr "Salva come PDF"
+
+#: init.php:40
+msgid ""
+"YITH Custom ThankYou page for Woocommerce is enabled but not effective. It "
+"requires WooCommerce in order to work."
+msgstr ""
+"YITH Custom ThankYou page for Woocommerce è abilitato ma non attivo. "
+"Richiede WooCommerce per poter funzionare."
+
+#: panel/pdf-options.php:22
+msgctxt "Panel: page title"
+msgid "PDF Settings "
+msgstr "Impostazioni PDF"
+
+#: panel/pdf-options.php:28
+msgctxt "Admin option"
+msgid "Enable PDF button"
+msgstr "Attiva il pulsante PDF"
+
+#: panel/pdf-options.php:31
+msgctxt "Admin option description"
+msgid "Check this option to show the PDF button on Custom Thank You Page"
+msgstr ""
+"Seleziona questa opzione per mostrare il pulsante PDF sulla pagina di "
+"ringraziamento"
+
+#: panel/pdf-options.php:38
+msgctxt "Admin option"
+msgid "Use as Shortcode"
+msgstr "Usa come Shortcode"
+
+#: panel/pdf-options.php:41
+msgctxt "Admin option description"
+msgid ""
+"If this option is checked the button will show only when you add the "
+"shortcode to the page [yith_ctpw_pdf_button]"
+msgstr ""
+"Se questa opzione è settata il pulsante sarà mostrato solo dopo aver "
+"inserito il relativo shortcode nella pagina [yith_ctpw_pdf_button]"
+
+#: panel/pdf-options.php:48
+msgctxt "Admin option"
+msgid "PDF Button Label"
+msgstr "Titolo del pulsante PDF"
+
+#: panel/pdf-options.php:51
+msgctxt "Admin option description"
+msgid "set the PDF button label"
+msgstr "setta l'etichetta del pulsante PDF"
+
+#: panel/pdf-options.php:58
+msgctxt "Admin option"
+msgid "PDF Button Background Color"
+msgstr "Colore di Sfondo del Pulsante"
+
+#: panel/pdf-options.php:66
+msgctxt "Admin option"
+msgid "PDF Button Background Color on Hover"
+msgstr "Colore di Sfondo del Pulsante in Hover"
+
+#: panel/pdf-options.php:74
+msgctxt "Admin option"
+msgid "PDF Button Text Color"
+msgstr "Colore del Testo del Pulsante"
+
+#: panel/pdf-options.php:82
+msgctxt "Admin option"
+msgid "PDF Button Text Color on Hover"
+msgstr "Colore del Testo del Pulsante in Hover"
+
+#: panel/pdf-options.php:90
+msgctxt "Admin option"
+msgid "Show Logo on PDF"
+msgstr "Mostra logo nel PDF"
+
+#: panel/pdf-options.php:93
+msgctxt "Admin option description"
+msgid "Check this option to show a custom logo image on PDF"
+msgstr ""
+"Selezionare questa opzione per mostrare un'immagine del logo personalizzata "
+"nel PDF"
+
+#: panel/pdf-options.php:100
+msgctxt "Admin option"
+msgid "Logo"
+msgstr "Logo"
+
+#: panel/pdf-options.php:103
+msgctxt "Admin option description"
+msgid "Upload or select a logo image (available extensions: jpg, png)"
+msgstr ""
+"Carica o seleziona un'immagine del logo (estensioni disponibili: jpg, png)"
+
+#: panel/pdf-options.php:110
+msgctxt "Admin option"
+msgid "Max Logo Width"
+msgstr "Larghezza massima del logo"
+
+#: panel/pdf-options.php:113
+msgctxt "Admin option description"
+msgid "set the max size for the logo image in px"
+msgstr "imposta la dimensione massima per l'immagine del logo in px"
+
+#: panel/pdf-options.php:120
+msgctxt "Admin option"
+msgid "Show Order Header Table"
+msgstr "Mostra la tabella intestazione dell'ordine"
+
+#: panel/pdf-options.php:123
+msgctxt "Admin option description"
+msgid "Show Order Header Table"
+msgstr "Mostra la tabella intestazione dell'ordine"
+
+#: panel/pdf-options.php:130
+msgctxt "Admin option"
+msgid "Show Order Details Table"
+msgstr "Mostra la tabella dettagli dell'ordine"
+
+#: panel/pdf-options.php:133
+msgctxt "Admin option description"
+msgid "Show Order Details Table"
+msgstr "Mostra la tabella dettagli dell'ordine"
+
+#: panel/pdf-options.php:140
+msgctxt "Admin option"
+msgid "Footer Text"
+msgstr "Testo del Footer"
+
+#: panel/pdf-options.php:143
+msgctxt "Admin option description"
+msgid "Add custom message to PDF footer"
+msgstr "Aggiungi un messaggio personalizzato nel Footer del Documento PDF"
+
+#: panel/settings-options.php:22
+msgctxt "Panel: page title"
+msgid "General settings"
+msgstr "Impostazioni Generali"
+
+#: panel/settings-options.php:28
+msgctxt "Admin option: Enable plugin"
+msgid "Enable Custom Thank You Page"
+msgstr "Abilita Custom Thank you Page"
+
+#: panel/settings-options.php:30
+msgctxt "Admin option description: Enable plugin"
+msgid "Check this option to enable the plugin features"
+msgstr "Seleziona quest'opzione per abilitare le funzionalità il plugin"
+
+#: panel/settings-options.php:37
+msgctxt "Admin option"
+msgid "Redirect to a Custom Page or External URL"
+msgstr "Reindirizza ad una pagina personalizzata o ad un URL esterno"
+
+#: panel/settings-options.php:47
+msgid "Select the General Thank You Page or External URL for all products"
+msgstr ""
+"Seleziona la pagina di ringraziamento generale o un URL esterno per tutti i "
+"prodotti"
+
+#: panel/settings-options.php:51
+msgctxt "Admin option"
+msgid "Select the General Page"
+msgstr "Seleziona la Pagina Generale"
+
+#: panel/settings-options.php:57
+msgid "Select the General Thank You Page for all products"
+msgstr "Seleziona la pagina di ringraziamento generale per tutti i prodotti"
+
+#: panel/settings-options.php:61
+msgctxt "Admin option"
+msgid "Set the Url"
+msgstr "Imposta l'URL "
+
+#: panel/settings-options.php:66
+msgid "Set the URL to redirect"
+msgstr "Imposta l'URL per reindirizzare"
+
+#: panel/settings-options.php:72
+msgctxt "Admin option: Custom Style"
+msgid "Custom CSS"
+msgstr "Stile personalizzato"
+
+#: panel/socialbox-options.php:22
+msgctxt "Section title in Settings"
+msgid "Social Box Settings"
+msgstr "Impostazioni social network"
+
+#: panel/socialbox-options.php:28
+msgctxt "Admin option"
+msgid "Enable Social Box"
+msgstr "Abilita la sezione Social network"
+
+#: panel/socialbox-options.php:30
+msgctxt "Admin option description"
+msgid "Check this option to show the social sharing section"
+msgstr ""
+"Seleziona questa opzione per mostrare le opzioni di condivisione sui social"
+
+#: panel/socialbox-options.php:37
+msgctxt "Admin option"
+msgid "Enable Facebook"
+msgstr "Abilita Facebook"
+
+#: panel/socialbox-options.php:39
+msgctxt "Admin option description"
+msgid "Check this option to show Facebook sharing button"
+msgstr ""
+"Seleziona questa opzione per mostrare il pulsante di condivisione Facebook"
+
+#: panel/socialbox-options.php:46
+msgctxt "Admin option"
+msgid "Enable Twitter"
+msgstr "Abilita Twitter"
+
+#: panel/socialbox-options.php:48
+msgctxt "Admin option description"
+msgid "Check this option to show Twitter sharing button"
+msgstr ""
+"Seleziona questa opzione per mostrare il pulsante di condivisione Twitter"
+
+#: panel/socialbox-options.php:55
+msgctxt "Admin option"
+msgid "Enable Google Plus"
+msgstr "Abilita Google+"
+
+#: panel/socialbox-options.php:57
+msgctxt "Admin option description"
+msgid "Check this option to show Google sharing button"
+msgstr ""
+"Seleziona questa opzione per mostrare il pulsante di condivisione Google+"
+
+#: panel/socialbox-options.php:64
+msgctxt "Admin option"
+msgid "Enable Pinterest"
+msgstr "Abilita Pinterest"
+
+#: panel/socialbox-options.php:66
+msgctxt "Admin option description"
+msgid "Check this option to show the Pinterest sharing button"
+msgstr ""
+"Seleziona questa opzione per mostrare il pulsante di condivisione Pinterest"
+
+#: panel/socialbox-options.php:83
+msgctxt "Panel: page title"
+msgid "URL Shortening Settings "
+msgstr "Impostazioni di abbreviazione URL "
+
+#: panel/socialbox-options.php:89
+msgid "URL shortening service"
+msgstr "Servizio di abbreviazione URL"
+
+#: panel/socialbox-options.php:93
+msgid "None"
+msgstr "Nessuno"
+
+#: panel/socialbox-options.php:94
+msgid "Google"
+msgstr "Google"
+
+#: panel/socialbox-options.php:95
+msgid "Bitly"
+msgstr "Bit.ly"
+
+#: panel/socialbox-options.php:102
+msgid "Google API Key"
+msgstr "Chiave API Google"
+
+#: panel/socialbox-options.php:112
+msgid "Bitly API Key"
+msgstr "Chiave API Bitly"
+
+#: panel/socialbox-options.php:132
+msgctxt "Panel: page title"
+msgid "Social Box Style "
+msgstr "Stile sezione social network "
+
+#: panel/socialbox-options.php:138
+msgid "Box title font color"
+msgstr "Colore carattere del titolo"
+
+#: panel/socialbox-options.php:146
+msgid "Box title font size"
+msgstr "Dimensione del carattere del titolo"
+
+#: panel/socialbox-options.php:157
+msgid "Box title font weight"
+msgstr "Peso carattere del titolo"
+
+#: panel/socialbox-options.php:170
+msgid "Social font color"
+msgstr "Colore del carattere per i social network"
+
+#: panel/socialbox-options.php:178
+msgid "Social font hover color"
+msgstr "Colore del carattere per i social network al passaggio del mouse"
+
+#: panel/socialbox-options.php:186
+msgid "Social font active color"
+msgstr "Colore carattere social network attivo"
+
+#: panel/socialbox-options.php:193
+msgid "Social font active color on hover"
+msgstr "Colore carattere social network attivo al passaggio del mouse"
+
+#: panel/socialbox-options.php:201
+msgid "Selected tab background color"
+msgstr "Colore di sfondo della scheda selezionata"
+
+#: panel/socialbox-options.php:209
+msgid "Tab main background color"
+msgstr "Colore di sfondo principale della scheda"
+
+#: panel/socialbox-options.php:217
+msgid "Arrow box color"
+msgstr "Colore freccia"
+
+#: panel/socialbox-options.php:225
+msgid "Sharing button color"
+msgstr "Colore pulsante di condivisione"
+
+#: panel/socialbox-options.php:233
+msgid "Sharing button font size"
+msgstr "Dimensione carattere del pulsante di condivisione"
+
+#: panel/socialbox-options.php:244
+msgid "Sharing button font color"
+msgstr "Colore carattere del pulsante di condivisione"
+
+#: panel/upsells-options.php:22
+msgctxt "Panel: page title"
+msgid "UpSells Settings "
+msgstr "Impostazioni di upsell "
+
+#: panel/upsells-options.php:28
+msgctxt "Admin option"
+msgid "Enable UpSelling section"
+msgstr "Attiva la sezione per i prodotti UpSell"
+
+#: panel/upsells-options.php:30
+msgctxt "Admin option description"
+msgid "Check this option to show the up-selling section"
+msgstr "Seleziona questa opzione per visualizzare la sezione di Upsell"
+
+#: panel/upsells-options.php:37
+msgctxt "Admin option"
+msgid "Products per row"
+msgstr "Prodotti per riga"
+
+#: panel/upsells-options.php:45
+msgctxt "Admin option"
+msgid "Products per page"
+msgstr "Prodotti per pagina"
+
+#: panel/upsells-options.php:52
+msgctxt "Admin option"
+msgid "Order by"
+msgstr "Ordina per"
+
+#: panel/upsells-options.php:55
+msgid "title"
+msgstr "titolo"
+
+#: panel/upsells-options.php:56
+msgid "random"
+msgstr "casuale"
+
+#: panel/upsells-options.php:57
+msgid "date"
+msgstr "data"
+
+#: panel/upsells-options.php:64
+msgctxt "Admin option"
+msgid "Order"
+msgstr "Ordine"
+
+#: panel/upsells-options.php:75
+msgctxt "Admin option"
+msgid "Select products"
+msgstr "Seleziona prodotti"
+
+#: panel/upsells-options.php:90
+msgctxt "Section title"
+msgid "Style "
+msgstr "Stile "
+
+#: templates/ctpw_pdf/order_infos_pdf_template_order_header.php:11
+#: templates/woocommerce/yith_ctpw_table.php:9
+#: templates/woocommerce_2.6.x/yith_ctpw_table.php:6
+msgid "Order details"
+msgstr "Dettagli ordine"
+
+#: templates/ctpw_pdf/order_infos_pdf_template_order_header.php:16
+#: templates/woocommerce/yith_ctpw_header.php:8
+#: templates/woocommerce_2.6.x/yith_ctpw_header.php:4
+msgid "Order:"
+msgstr "Ordine:"
+
+#: templates/ctpw_pdf/order_infos_pdf_template_order_header.php:17
+#: templates/woocommerce/yith_ctpw_header.php:12
+#: templates/woocommerce_2.6.x/yith_ctpw_header.php:8
+msgid "Date:"
+msgstr "Data:"
+
+#: templates/ctpw_pdf/order_infos_pdf_template_order_header.php:18
+#: templates/woocommerce/yith_ctpw_header.php:16
+#: templates/woocommerce_2.6.x/yith_ctpw_header.php:12
+msgid "Total:"
+msgstr "Totale:"
+
+#: templates/ctpw_pdf/order_infos_pdf_template_order_header.php:21
+#: templates/woocommerce/yith_ctpw_header.php:21
+#: templates/woocommerce_2.6.x/yith_ctpw_header.php:17
+msgid "Payment method:"
+msgstr "Metodo di pagamento:"
+
+#: templates/ctpw_pdf/order_infos_pdf_template_order_table.php:10
+#: templates/woocommerce/yith_ctpw_table.php:18
+#: templates/woocommerce_2.6.x/yith_ctpw_table.php:11
+msgid "Product"
+msgstr "Prodotto"
+
+#: templates/ctpw_pdf/order_infos_pdf_template_order_table.php:11
+#: templates/woocommerce/yith_ctpw_table.php:19
+#: templates/woocommerce_2.6.x/yith_ctpw_table.php:12
+msgid "Total"
+msgstr "Totale"
+
+#: templates/ctpw_pdf/order_infos_pdf_template_order_table.php:58
+#: templates/woocommerce/yith_ctpw_table.php:70
+#: templates/woocommerce_2.6.x/yith_ctpw_table.php:46
+#, php-format
+msgid "Download file %s"
+msgstr "Scarica file %s"
+
+#: templates/ctpw_pdf/order_infos_pdf_template_order_table.php:101
+#: templates/woocommerce/yith_ctpw_table.php:113
+msgid "Note:"
+msgstr "Nota:"
+
+#: templates/woocommerce/yith_ctpw_customer_details.php:4
+#: templates/woocommerce_2.6.x/yith_ctpw_customer_details.php:1
+msgid "Customer details"
+msgstr "Dettagli cliente"
+
+#: templates/woocommerce/yith_ctpw_customer_details.php:8
+#: templates/woocommerce_2.6.x/yith_ctpw_customer_details.php:4
+msgid "Email:"
+msgstr "Email:"
+
+#: templates/woocommerce/yith_ctpw_customer_details.php:9
+#: templates/woocommerce_2.6.x/yith_ctpw_customer_details.php:5
+msgid "Telephone:"
+msgstr "Telefono:"
+
+#: templates/woocommerce/yith_ctpw_customer_details.php:26
+#: templates/woocommerce_2.6.x/yith_ctpw_customer_details.php:22
+msgid "Billing address"
+msgstr "Indirizzo di fatturazione"
+
+#: templates/woocommerce/yith_ctpw_customer_details.php:30
+#: templates/woocommerce/yith_ctpw_customer_details.php:45
+#: templates/woocommerce_2.6.x/yith_ctpw_customer_details.php:26
+#: templates/woocommerce_2.6.x/yith_ctpw_customer_details.php:41
+msgid "N/A"
+msgstr "N/D"
+
+#: templates/woocommerce/yith_ctpw_customer_details.php:41
+#: templates/woocommerce_2.6.x/yith_ctpw_customer_details.php:37
+msgid "Shipping address"
+msgstr "Indirizzo di spedizione"
+
+#: templates/woocommerce/yith_ctpw_failed.php:2
+#: templates/woocommerce_2.6.x/yith_ctpw_failed.php:2
+msgid ""
+"Unfortunately your order cannot be processed as the originating bank/"
+"merchant has declined your transaction."
+msgstr ""
+"Sfortunatamente il tuo ordine non può essere elaborato poiché la transazione "
+"è stata rifiutata."
+
+#: templates/woocommerce/yith_ctpw_failed.php:6
+#: templates/woocommerce_2.6.x/yith_ctpw_failed.php:6
+msgid "Please make a new attempt or go to your account page."
+msgstr "Prova nuovamente o accedi alla tua area riservata."
+
+#: templates/woocommerce/yith_ctpw_failed.php:8
+#: templates/woocommerce_2.6.x/yith_ctpw_failed.php:8
+msgid "Please make a new attempt."
+msgstr "Prova nuovamente ad eseguire l'acquisto."
+
+#: templates/woocommerce/yith_ctpw_failed.php:12
+#: templates/woocommerce_2.6.x/yith_ctpw_failed.php:12
+msgid "Pay"
+msgstr "Paga"
+
+#: templates/woocommerce/yith_ctpw_failed.php:14
+#: templates/woocommerce_2.6.x/yith_ctpw_failed.php:14
+msgid "My Account"
+msgstr "Il mio account"
+
+#: templates/woocommerce/yith_ctpw_social_box.php:18
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:13
+msgid "Share on..."
+msgstr "Condividi su..."
+
+#: templates/woocommerce/yith_ctpw_social_box.php:25
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:19
+msgid "Facebook"
+msgstr "Facebook"
+
+#: templates/woocommerce/yith_ctpw_social_box.php:32
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:26
+msgid "Twitter"
+msgstr "Twitter"
+
+#: templates/woocommerce/yith_ctpw_social_box.php:39
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:33
+msgid "Google +"
+msgstr "Google +"
+
+#: templates/woocommerce/yith_ctpw_social_box.php:46
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:40
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: templates/woocommerce/yith_ctpw_social_box.php:65
+#: templates/woocommerce/yith_ctpw_social_box.php:153
+#: templates/woocommerce/yith_ctpw_social_box.php:213
+#: templates/woocommerce/yith_ctpw_social_box.php:292
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:59
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:142
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:202
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:273
+msgid "Select the product to share"
+msgstr "Seleziona il prodotto da condividere"
+
+#: templates/woocommerce/yith_ctpw_social_box.php:106
+#: templates/woocommerce/yith_ctpw_social_box.php:108
+#: templates/woocommerce/yith_ctpw_social_box.php:184
+#: templates/woocommerce/yith_ctpw_social_box.php:242
+#: templates/woocommerce/yith_ctpw_social_box.php:246
+#: templates/woocommerce/yith_ctpw_social_box.php:328
+#: templates/woocommerce/yith_ctpw_social_box.php:330
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:101
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:103
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:173
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:231
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:235
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:309
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:311
+msgid "I've just purchased: "
+msgstr "Ho appena acquistato: "
+
+#: templates/woocommerce/yith_ctpw_social_box.php:127
+#: templates/woocommerce/yith_ctpw_social_box.php:267
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:116
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:248
+msgid "Share"
+msgstr "Condividi"
+
+#: templates/woocommerce/yith_ctpw_social_box.php:185
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:174
+msgid "characters left"
+msgstr "caratteri rimasti"
+
+#: templates/woocommerce/yith_ctpw_social_box.php:188
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:177
+msgid "Tweet"
+msgstr "Tweet"
+
+#: templates/woocommerce/yith_ctpw_social_box.php:353
+#: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:325
+msgid "Pin it"
+msgstr "Salva pin"
+
+#~ msgctxt "Panel: page title"
+#~ msgid "Payment Gateways "
+#~ msgstr "Metodi di Pagamento"
+
+#~ msgid "Payment Gateways"
+#~ msgstr "Metodi di Pagamento"
+
+#, fuzzy
+#~| msgid "Custom ThankYou Page"
+#~ msgid "Custom Wrodpress Page"
+#~ msgstr "Pagina di ringraziamento personalizzata"
+
+#~ msgid "Priority"
+#~ msgstr "Priorità"
+
+#~ msgid "Select General Priority to"
+#~ msgstr "Selezionare priorità generali da"
+
+#~ msgid ""
+#~ "Choose which custom Thank You page must have priority over others "
+#~ "(General, Category or Product)"
+#~ msgstr ""
+#~ "Selezionare questa opzione per dare priorità alla pagina di "
+#~ "ringraziamento personalizzata di prodotti, categoria o quella generale. "
+
+#~ msgid ""
+#~ "If you have set different custom Thank You pages for products in the "
+#~ "cart, select which settings should have\n"
+#~ "                    priority over others (the custom Thank You page "
+#~ "associated with single products or categories or the general one).\n"
+#~ "                    If you set it to Products and there are more products "
+#~ "with different Thank You pages, the one associated with the first\n"
+#~ "                    product in the list will be shown."
+#~ msgstr ""
+#~ "se c'è un prodotto con pagina di ringraziamento personalizzata nel "
+#~ "carrello è possibile ignorare tale pagina impostando la priorità su "
+#~ "generale. Se set di prodotti e ci sono due o più prodotti con diversi "
+#~ "pagine di ringraziamento personalizzato mostrerà la pagina di "
+#~ "ringraziamento del primo prodotto nell'elenco"
+
+#~ msgid "Order Details"
+#~ msgstr "Dettagli ordine"
+
+#~ msgid "Show header section"
+#~ msgstr "Mostra sezione intestazione"
+
+#~ msgid "This section shows a main order details"
+#~ msgstr "questa sezione mostra una semplice recensione dell'ordine"
+
+#~ msgid "This section shows all order details"
+#~ msgstr "questa sezione mostra una recensione dettagliata dell'ordine"
+
+#~ msgid "Show customer details"
+#~ msgstr "Visualizza parte Dettagli cliente"
+
+#~ msgid "This section shows customer details"
+#~ msgstr "questa sezione Mostra i dettagli del cliente"
+
+#~ msgid "General settings"
+#~ msgstr "Impostazioni generali"
+
+#~ msgid "Enable Custom Thank You Page"
+#~ msgstr "Abilita Pagina di ringraziamento personalizzata"
+
+#~ msgid "Check this option to enable the plugin features"
+#~ msgstr "Selezionare questa opzione per abilitare le funzionalità del plugin"
+
+#~ msgid "Select the General Page"
+#~ msgstr "Selezionare la pagina generale"
+
+#~ msgid "Social Box Settings"
+#~ msgstr "Impostazioni Social Box"
+
+#~ msgid "Enable Social Box"
+#~ msgstr "Abilita Social Box"
+
+#~ msgid "Check this option to show the social sharing section"
+#~ msgstr "Selezionare questa opzione per visualizzare il social box"
+
+#~ msgid "Enable Facebook"
+#~ msgstr "Abilita Facebook"
+
+#~ msgid "Check this option to show Facebook sharing button"
+#~ msgstr "Selezionare questa opzione per mostrare la condivisione Facebook"
+
+#~ msgid "Enable Twitter"
+#~ msgstr "Abilita Twitter"
+
+#~ msgid "Check this option to show Twitter sharing button"
+#~ msgstr "Selezionare questa opzione per mostrare la condivisione Twitter"
+
+#~ msgid "Enable Google Plus"
+#~ msgstr "Abilita Google+"
+
+#~ msgid "Check this option to show Google sharing button"
+#~ msgstr "Selezionare questa opzione per mostrare la condivisione Su Google"
+
+#~ msgid "Enable Pinterest"
+#~ msgstr "Abilita Pinterest"
+
+#~ msgid "Check this option to show the Pinterest sharing button"
+#~ msgstr "Selezionare questa opzione per mostrare la condivisione Pinterest"
+
+#~ msgid "URL Shortening Settings "
+#~ msgstr "Impostazioni abbreviazione URL "
+
+#~ msgid "Social Box Style "
+#~ msgstr "Stile Social Box "
+
+#~ msgid "UpSells Settings "
+#~ msgstr "Impostazioni di upsell "
+
+#~ msgid "Enable UpSelling section"
+#~ msgstr "Attivare la sezione di UpSelling"
+
+#~ msgid "Check this option to show the up-selling section"
+#~ msgstr "Selezionare questa opzione per visualizzare la sezione di upsell"
+
+#~ msgid "Products per row"
+#~ msgstr "Numero di prodotti per riga"
+
+#~ msgid "Products per page"
+#~ msgstr "Prodotti per pagina"
+
+#~ msgid "Order by"
+#~ msgstr "Ordine per"
+
+#~ msgid "Order"
+#~ msgstr "Ordinamento"
+
+#~ msgid "Select products"
+#~ msgstr "Seleziona Prodotti"
+
+#~ msgid "Style "
+#~ msgstr "Stile "
+
+#~ msgid ""
+#~ "Select to give priority to Custom Thankyou page of Products, Category or "
+#~ "the general one. "
+#~ msgstr ""
+#~ "Selezionare questa opzione per dare priorità alla pagina di "
+#~ "ringraziamento personalizzata di prodotti, categoria o quella generale. "
+
+#~ msgid ""
+#~ "if there's a product with custom thank you page in the cart you can "
+#~ "override that page setting the proprity to General. If set Products, the "
+#~ "and there are two or more products with different custom thank you pages "
+#~ "it will show the Thank you page of the first product in the list"
+#~ msgstr ""
+#~ "se c'è un prodotto con pagina di ringraziamento personalizzata nel "
+#~ "carrello è possibile ignorare tale pagina impostando la priorità su "
+#~ "generale. Se set di prodotti e ci sono due o più prodotti con diversi "
+#~ "pagine di ringraziamento personalizzato mostrerà la pagina di "
+#~ "ringraziamento del primo prodotto nell'elenco"
+
+#~ msgid "Order Review"
+#~ msgstr "Ordina Revisione"
+
+#~ msgid "Show Header Part"
+#~ msgstr "Mostra parte intestazione"
+
+#~ msgid "this section shows a simple order review"
+#~ msgstr "questa sezione mostra una semplice recensione dell'ordine"
+
+#~ msgid "this section shows a full detailed order review"
+#~ msgstr "questa sezione mostra una recensione dettagliata dell'ordine"
+
+#~ msgid "Show Customer Details Part"
+#~ msgstr "Visualizza parte Dettagli cliente"
+
+#~ msgid "this section shows the Customer Details"
+#~ msgstr "questa sezione Mostra i dettagli del cliente"
+
+#~ msgid "Titles Font Color"
+#~ msgstr "Colore del carattere di titoli"
+
+#~ msgid "Titles Font Size"
+#~ msgstr "Dimensione carattere dei titoli"
+
+#~ msgid "Titles Font Weight"
+#~ msgstr "Peso del Carattere del titolo"
+
+#~ msgid "Write the products id separated by comma."
+#~ msgstr "Scrivere i prodotti id separati da virgola."
+
+#~ msgid "Select the Custom Thank You page!"
+#~ msgstr "Selezionare la pagina di ringraziamento personalizzata!"
+
+#~ msgid "Free vs Premium"
+#~ msgstr "Versione Gratuita Vs Premium"
+
+#~ msgid "You May Be Interested in..."
+#~ msgstr "Potrebbe essere interessato a…"
+
+#~ msgid "Enable Custom ThankYou Page"
+#~ msgstr "Abilita Pagina di ringraziamento personalizzata"
+
+#~ msgid "Check this option to enable plugin features"
+#~ msgstr "Selezionare questa opzione per abilitare le funzionalità del plugin"
+
+#~ msgid "Select the General ThankYou Page for all products"
+#~ msgstr ""
+#~ "Selezionare la pagina di ringraziamento generale per tutti i prodotti"
+
+#~ msgid "Check this option to show the Twitter sharer"
+#~ msgstr "Selezionare questa opzione per mostrare la condivisione Twitter"
+
+#~ msgid "Check this option to show the Google sharer"
+#~ msgstr "Selezionare questa opzione per mostrare la condivisione Google+"
+
+#~ msgid "Check this option to show the Pinterest sharer"
+#~ msgstr "Selezionare questa opzione per mostrare la condivisione Pinterest"
+
+#~ msgid "Url Shortening Settings "
+#~ msgstr "Impostazioni abbreviazione URL "
+
+#~ msgid "Box Title Font Color"
+#~ msgstr "Colore Carattere del Titolo del box"
+
+#~ msgid "Box Title Font Size"
+#~ msgstr "Dimensione del font del titolo del box"
+
+#~ msgid "Box Title Font Weight"
+#~ msgstr "Dimensione del font del titolo del box"
+
+#~ msgid "Socials Titles Font Color"
+#~ msgstr "Colore del carattere di titoli Social"
+
+#~ msgid "Socials Titles Font Hover Color"
+#~ msgstr "Colore del carattere di titoli Social al passaggio del mouse"
+
+#~ msgid "Socials Titles Font Active Color"
+#~ msgstr "Colore Font Titoli Social attivo"
+
+#~ msgid "Socials Titles Font Active Hover Color "
+#~ msgstr "Colore Font Titoli Social attivo al passaggio del mouse "
+
+#~ msgid "Selected Tab Background Color"
+#~ msgstr "Colore di sfondo del tab selezionato"
+
+#~ msgid "Arrow Box Color"
+#~ msgstr "Colore della freccia del box"
+
+#~ msgid "Share Buttons Color"
+#~ msgstr "Colore pulsante condivisione"
+
+#~ msgid "Share Button Title Font Size"
+#~ msgstr "Font del titolo per il pulsante condivisione"
+
+#~ msgid "Share Buttons Font Color"
+#~ msgstr "Colore del titolo del pulsante condivisione"
+
+#~ msgid "Check this option to show the upsells section"
+#~ msgstr "Selezionare questa opzione per visualizzare la sezione di upsell"
+
+#~ msgid "Products per Row"
+#~ msgstr "Numero di prodotti per riga"
+
+#~ msgid "Products per Page"
+#~ msgstr "Prodotti per pagina"
+
+#~ msgid "Select Products"
+#~ msgstr "Seleziona Prodotti"
+
+#~ msgid "Title Font Color"
+#~ msgstr "Colore font titolo"
+
+#~ msgid "Title Font Size"
+#~ msgstr "Dimensione font titolo"
+
+#~ msgid "Title Font Weight"
+#~ msgstr "Larghezza Font Titolo"
+
+#~ msgid "Billing Address"
+#~ msgstr "Indirizzo di fatturazione"
+
+#~ msgid "Shipping Address"
+#~ msgstr "Indirizzo di spedizione"
+
+#~ msgid "Please attempt your purchase again or go to your account page."
+#~ msgstr ""
+#~ "Prova nuovamente ad eseguire l'acquisto o vai alla pagina del tuo account."
+
+#~ msgid "Please attempt your purchase again."
+#~ msgstr "Prova nuovamente ad eseguire l'acquisto."
+
+#~ msgid "click to edit"
+#~ msgstr "clicca per modificare"
+
+#~ msgid "I just purchased: "
+#~ msgstr "Ho appena acquistato: "
+
+#~ msgid "chars remaining"
+#~ msgstr "caratteri restanti"
+
+#~ msgid "Pin It"
+#~ msgstr "Pin It"
+
+#~ msgid "Download file%s"
+#~ msgstr "Scarica file%s"

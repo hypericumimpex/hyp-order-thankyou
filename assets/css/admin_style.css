@@ -1,0 +1,15 @@
+#yith_ctpw_panel_settings table select {
+    padding: 0;
+}
+
+#ctpw_tab_data.woocommerce_options_panel label {
+    width: 200px;
+}
+
+#yith_ctpw_panel_payment_gateways form > h2 {
+    display: none;
+}
+
+#yith_ctpw_panel_payment_gateways form > h2:first-child {
+    display: block;
+}

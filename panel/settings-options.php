@@ -54,7 +54,7 @@ return array(
                 'sort_column' => 'title',
                 'class' => 'wc-enhanced-select-nostd',
                 'css' => 'min-width:300px;',
-                'desc_tip' => __('Select the General Thank You Page for all products'),
+                'desc' => __('Select the General Thank You Page for all products', 'yith-custom-thankyou-page-for-woocommerce'),
             ),
 
             'settings_select_custom_thankyou_page_url' => array(
@@ -63,7 +63,7 @@ return array(
                 'id'      => 'yith_ctpw_general_page_url',
                 'class' => 'yith_ctpw_general_page_url',
                 'css' => 'min-width:300px;',
-                'desc_tip' => __('Set the URL to redirect'),
+                'desc_tip' => __('Set the URL to redirect', 'yith-custom-thankyou-page-for-woocommerce'),
                 'desc' => __('write full url for ex: https://yithemes.com/', 'yith-custom-thankyou-page-for-woocommerce' )
             ),
 

@@ -11,7 +11,7 @@
 /**
  * Upload Plugin Admin View
  *
- * @package    Yithemes
+ * @package    YITH
  * @author     Emanuela Castorina <emanuela.castorina@yithemes.it>
  * @since      1.0.0
  */

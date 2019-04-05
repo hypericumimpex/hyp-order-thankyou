@@ -11,21 +11,14 @@ if ( ! defined( 'YITH_CTPW_VERSION' ) ) {
     exit( 'Direct access forbidden.' );
 }
 
-/**
- *
- *
- * @class      YITH_url_shortener
- * @package    Yithemes
- * @since      Version 1.0.0
- * @author     Your Inspiration Themes
- *
- */
-
 if ( ! class_exists( 'YITH_url_shortener' ) ) {
     /**
-     * Class YITH_Custom_Thankyou_Page_Admin_Premium
+     * Manage the Socials url shortening
      *
-     * @author Armando Liccardo <armando.liccardo@yithemes.com>
+     * @class       YITH_url_shortener
+     * @package     YITH Custom ThankYou Page for Woocommerce
+     * @author      YITH
+     * @since       1.0.0
      */
     class YITH_url_shortener {
 

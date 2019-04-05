@@ -11,20 +11,15 @@ if ( ! defined( 'YITH_CTPW_VERSION' ) ) {
     exit( 'Direct access forbidden.' );
 }
 
-/**
- *
- * @class      YITH_Custom_Thankyou_Page_Admin
- * @package    Yithemes
- * @since      Version 1.0.0
- * @author     Armando Liccardo <armando.liccardo@yithemes.com>
- *
- */
-
 if ( ! class_exists( 'YITH_Custom_Thankyou_Page_Admin_Premium' ) ) {
     /**
-     * Class YITH_Custom_Thankyou_Page_Admin_Premium
+     * Admin Premium Class
      *
-     * @author Armando Liccardo <armando.liccardo@yithemes.com>
+     * @class       YITH_Custom_Thankyou_Page_Admin_Premium
+     * @package     YITH Custom ThankYou Page for Woocommerce
+     * @since       1.0.0
+     * @author      YITH
+     *
      */
     class YITH_Custom_Thankyou_Page_Admin_Premium extends YITH_Custom_Thankyou_Page_Admin {
         /* wc version */
@@ -80,6 +75,189 @@ if ( ! class_exists( 'YITH_Custom_Thankyou_Page_Admin_Premium' ) ) {
 
             //load the admin js only on this plugin page
             add_action('admin_enqueue_scripts', array($this,'yith_ctpw_load_admin_js') );
+
+            /* load gutemberg blocks if wp 5*/
+            global $wp_version;
+            if ( version_compare( $wp_version, '5', '>=' ) ) {
+                /* gutemberg block */
+                $blocks = array(
+                    'ctpw-show-products' => array(
+                        'title'          => _x( 'Thank You Page Up-sells', '[gutenberg]: block name', 'yith-custom-thankyou-page-for-woocommerce' ),
+                        'description'    => _x( 'With this block you can add Up-sells product on Custom Thank You Page....', '[gutenberg]: block description', 'yith-custom-thankyou-page-for-woocommerce' ),
+                        'shortcode_name' => 'ctpw_show_products',
+                        'do_shortcode'   => true,
+                        'keywords'       => array(
+                            _x( 'Thank you page', '[gutenberg]: keywords', 'yith-custom-thankyou-page-for-woocommerce' ),
+                            _x( 'Up-Sells', '[gutenberg]: keywords', 'yith-custom-thankyou-page-for-woocommerce' ),
+                        ),
+                        'attributes'     => array(
+                            "columns" => array(
+                                "type" => "select",
+                                "label" => _x( 'Columns Number', '[gutenberg]: block description', 'yith-custom-thankyou-page-for-woocommerce' ),
+                                "options" => array(
+                                    '1' => "1",
+                                    '2' => "2",
+                                    '3' => "3",
+                                    '4' => "4",
+                                ),
+                                "default" => "4"
+                            ), //end cols
+                            'orderby' =>  array(
+                                "type" => "select",
+                                "label" => _x( 'Order by', '[gutenberg]: block description', 'yith-custom-thankyou-page-for-woocommerce' ),
+                                "options" => array(
+                                    'title' => _x( 'Title', '[gutenberg]: inspector description', 'yith-custom-thankyou-page-for-woocommerce' ),
+                                    'random' => _x( 'Random', '[gutenberg]: inspector description', 'yith-custom-thankyou-page-for-woocommerce' ),
+                                    'date' => _x( 'Date', '[gutenberg]: inspector description', 'yith-custom-thankyou-page-for-woocommerce' ),
+                                ),
+                                "default" => 'title'
+                            ),//end orderby
+                            'order' =>  array(
+                                "type" => "select",
+                                "label" => _x( 'Order', '[gutenberg]: block description', 'yith-custom-thankyou-page-for-woocommerce' ),
+                                "options" => array(
+                                    'asc' => _x( 'ASC', '[gutenberg]: inspector description', 'yith-custom-thankyou-page-for-woocommerce' ),
+                                    'desc' => _x( 'DESC', '[gutenberg]: inspector description', 'yith-custom-thankyou-page-for-woocommerce' ),
+                                ),
+                                "default" => 'asc'
+                            ),//end order
+                            'ids' => array(
+                                'type' => "text",
+                                'label' => _x( 'Product to show (write the ids separated by comma)', '[gutenberg]: inspector description', 'yith-custom-thankyou-page-for-woocommerce' ),
+                                'default' => ""
+                            )//end ids
+
+                        )//end attributes
+                    ), //end ctpw_show_products block
+                    'yith-orderreview-header' => array(
+                        'title'          => _x( 'Thank You Page Order Overview Header', '[gutenberg]: block name', 'yith-custom-thankyou-page-for-woocommerce' ),
+                        'description'    => _x( 'Show Order Overview Header on Custom Thank You Page....', '[gutenberg]: block description', 'yith-custom-thankyou-page-for-woocommerce' ),
+                        'shortcode_name' => 'yith_orderreview_header',
+                        'do_shortcode'   => false,
+                        'keywords'       => array(
+                            _x( 'Thank you page', '[gutenberg]: keywords', 'yith-custom-thankyou-page-for-woocommerce' ),
+                            _x( 'Order Overview', '[gutenberg]: keywords', 'yith-custom-thankyou-page-for-woocommerce' ),
+                        ),
+                        'attributes'     => array()
+                    ), //end yith-orderreview-header
+                    'yith-orderreview-table' => array(
+                        'title'          => _x( 'Thank You Page Order Table', '[gutenberg]: block name', 'yith-custom-thankyou-page-for-woocommerce' ),
+                        'description'    => _x( 'Show Order Table on Custom Thank You Page....', '[gutenberg]: block description', 'yith-custom-thankyou-page-for-woocommerce' ),
+                        'shortcode_name' => 'yith_orderreview_table',
+                        'do_shortcode'   => false,
+                        'keywords'       => array(
+                            _x( 'Thank you page', '[gutenberg]: keywords', 'yith-custom-thankyou-page-for-woocommerce' ),
+                            _x( 'Order Table', '[gutenberg]: keywords', 'yith-custom-thankyou-page-for-woocommerce' ),
+                        ),
+                        'attributes'     => array()
+                    ), //end yith-orderreview-table
+                    'yith-orderreview-customer-details' => array(
+                        'title'          => _x( 'Thank You Page Order Customers Details', '[gutenberg]: block name', 'yith-custom-thankyou-page-for-woocommerce' ),
+                        'description'    => _x( 'Show Order Customers Details on Custom Thank You Page....', '[gutenberg]: block description', 'yith-custom-thankyou-page-for-woocommerce' ),
+                        'shortcode_name' => 'yith_orderreview_customer_details',
+                        'do_shortcode'   => false,
+                        'keywords'       => array(
+                            _x( 'Thank you page', '[gutenberg]: keywords', 'yith-custom-thankyou-page-for-woocommerce' ),
+                            _x( 'Order Customer Details', '[gutenberg]: keywords', 'yith-custom-thankyou-page-for-woocommerce' ),
+                        ),
+                        'attributes'     => array()
+                    ), //end yith-orderreview-customer-details
+                    'yith-ctpw-social' => array(
+                        'title'          => _x( 'Thank You Page Social Box', '[gutenberg]: block name', 'yith-custom-thankyou-page-for-woocommerce' ),
+                        'description'    => _x( 'Show Social Box on Custom Thank You Page....', '[gutenberg]: block description', 'yith-custom-thankyou-page-for-woocommerce' ),
+                        'shortcode_name' => 'yith_ctpw_social',
+                        'do_shortcode'   => false,
+                        'keywords'       => array(
+                            _x( 'Thank you page', '[gutenberg]: keywords', 'yith-custom-thankyou-page-for-woocommerce' ),
+                            _x( 'Order Social Sharing', '[gutenberg]: keywords', 'yith-custom-thankyou-page-for-woocommerce' ),
+                        ),
+                        'attributes'     => array(
+                            "facebook" => array(
+                                "type" => "checkbox",
+                                "label" => _x( 'Facebook', '[gutenberg]: block field label', 'yith-custom-thankyou-page-for-woocommerce' ),
+                                "default" => true,
+                                'helps'   => array(
+                                    'checked'   => _x( 'Show facebook tab', '[gutenberg]: Help text', 'yith-custom-thankyou-page-for-woocommerce' ),
+                                    'unchecked' => _x( 'Hide facebook tab', '[gutenberg]: Help text', 'yith-custom-thankyou-page-for-woocommerce' ),
+                                ),
+                            ),
+                            "twitter" => array(
+                                "type" => "checkbox",
+                                "label" => _x( 'Twitter', '[gutenberg]: block field label', 'yith-custom-thankyou-page-for-woocommerce' ),
+                                "default" => true,
+                                'helps'   => array(
+                                    'checked'   => _x( 'Show twitter tab', '[gutenberg]: Help text', 'yith-custom-thankyou-page-for-woocommerce' ),
+                                    'unchecked' => _x( 'Hide twitter tab', '[gutenberg]: Help text', 'yith-custom-thankyou-page-for-woocommerce' ),
+                                ),
+                            ),
+                            "google" => array(
+                                "type" => "checkbox",
+                                "label" => _x( 'Google', '[gutenberg]: block field label', 'yith-custom-thankyou-page-for-woocommerce' ),
+                                "default" => true,
+                                'helps'   => array(
+                                    'checked'   => _x( 'Show google tab', '[gutenberg]: Help text', 'yith-custom-thankyou-page-for-woocommerce' ),
+                                    'unchecked' => _x( 'Hide google tab', '[gutenberg]: Help text', 'yith-custom-thankyou-page-for-woocommerce' ),
+                                ),
+                            ),
+                            "pinterest" => array(
+                                "type" => "checkbox",
+                                "label" => _x( 'Pinterest', '[gutenberg]: block field label', 'yith-custom-thankyou-page-for-woocommerce' ),
+                                "default" => true,
+                                'helps'   => array(
+                                    'checked'   => _x( 'Show pinterest tab', '[gutenberg]: Help text', 'yith-custom-thankyou-page-for-woocommerce' ),
+                                    'unchecked' => _x( 'Hide pinterest tab', '[gutenberg]: Help text', 'yith-custom-thankyou-page-for-woocommerce' ),
+                                ),
+                            )
+                        )
+                    ), //end yith-ctpw-social
+                    'yith-ctpw-customer-name' => array(
+                        'title'          => _x( 'Thank You Page Customer Name', '[gutenberg]: block name', 'yith-custom-thankyou-page-for-woocommerce' ),
+                        'description'    => _x( 'Print Order Customer Name on Custom Thank You Page....', '[gutenberg]: block description', 'yith-custom-thankyou-page-for-woocommerce' ),
+                        'shortcode_name' => 'yith_ctpw_customer_name',
+                        'do_shortcode'   => false,
+                        'keywords'       => array(
+                            _x( 'Thank you page', '[gutenberg]: keywords', 'yith-custom-thankyou-page-for-woocommerce' ),
+                            _x( 'Order User Name', '[gutenberg]: keywords', 'yith-custom-thankyou-page-for-woocommerce' ),
+                        ),
+                        'attributes'     => array(
+                            'name' => array(
+                                "type" => "select",
+                                "label" => _x( 'Name Type', '[gutenberg]: block field label', 'yith-custom-thankyou-page-for-woocommerce' ),
+                                "options" => array(
+                                    'first_name' => _x( 'Frist Name', '[gutenberg]: inspector description', 'yith-custom-thankyou-page-for-woocommerce' ),
+                                    'billing_first_name' => _x( 'First Billing Name', '[gutenberg]: inspector description', 'yith-custom-thankyou-page-for-woocommerce' ),
+                                ),
+                                "default" => "first_name"
+                            )
+                        )
+                    ), //end yith-ctpw-customer-name
+                    'yith-ctpw-order-number' => array(
+                        'title'          => _x( 'Thank You Page Order Number', '[gutenberg]: block name', 'yith-custom-thankyou-page-for-woocommerce' ),
+                        'description'    => _x( 'Show The Order Number on Custom Thank You Page....', '[gutenberg]: block description', 'yith-custom-thankyou-page-for-woocommerce' ),
+                        'shortcode_name' => 'yith_ctpw_order_number',
+                        'do_shortcode'   => false,
+                        'keywords'       => array(
+                            _x( 'Thank you page', '[gutenberg]: keywords', 'yith-custom-thankyou-page-for-woocommerce' ),
+                            _x( 'Order Number', '[gutenberg]: keywords', 'yith-custom-thankyou-page-for-woocommerce' ),
+                        ),
+                        'attributes'     => array()
+                    ), //end yith-ctpw-order-number
+                    'yith-ctpw-customer-email' => array(
+                        'title'          => _x( 'Thank You Page Order Customer E-mail', '[gutenberg]: block name', 'yith-custom-thankyou-page-for-woocommerce' ),
+                        'description'    => _x( 'Show The Order Customer E-mail on Custom Thank You Page....', '[gutenberg]: block description', 'yith-custom-thankyou-page-for-woocommerce' ),
+                        'shortcode_name' => 'yith_ctpw_customer_email',
+                        'do_shortcode'   => false,
+                        'keywords'       => array(
+                            _x( 'Thank you page', '[gutenberg]: keywords', 'yith-custom-thankyou-page-for-woocommerce' ),
+                            _x( 'Order Customer E-mail', '[gutenberg]: keywords', 'yith-custom-thankyou-page-for-woocommerce' ),
+                        ),
+                        'attributes'     => array()
+                    ), //end yith-ctpw-customer-email
+                ); //end blocks
+                yith_plugin_fw_gutenberg_add_blocks( $blocks );
+            }
+
+
 
         }
 
@@ -142,14 +320,14 @@ if ( ! class_exists( 'YITH_Custom_Thankyou_Page_Admin_Premium' ) ) {
                 'settings_general_priority_thankyou_page' => array(
                     'title'   => _x( 'Select General Priority to', 'Admin option: General Priority', 'yith-custom-thankyou-page-for-woocommerce' ),
                     'type'    => 'select',
-                    'desc'    => _x( 'Choose which custom Thank You page must have priority over others (General, Category or Product)',
+                    'desc'    => _x( 'Choose which custom Thank You page must have priority over others (General, Category, Product or Payment Method)',
                         'Admin option description: General Priority', 'yith-custom-thankyou-page-for-woocommerce' ),
                     'id'      => 'yith_ctpw_priority',
                     'options' => array(
-                        'general' => 'General',
-                        'category' => 'Product Category',
-                        'product' => 'Product',
-                        'payment' => 'Payment Method'
+                        'general' => __('General','yith-custom-thankyou-page-for-woocommerce'),
+                        'category' => __('Product Category', 'yith-custom-thankyou-page-for-woocommerce'),
+                        'product' => __('Product', 'yith-custom-thankyou-page-for-woocommerce'),
+                        'payment' => __('Payment Method', 'yith-custom-thankyou-page-for-woocommerce')
                     ),
                     'css' => 'max-width:200px;',
                     'default' => 'general',

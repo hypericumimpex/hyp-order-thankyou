@@ -1,12 +1,13 @@
-<?php
-/*
- * This file belongs to the YIT Framework.
+﻿<?php
+/**
+ * This file belongs to the YIT Plugin Framework.
  *
  * This source file is subject to the GNU GENERAL PUBLIC LICENSE (GPL 3.0)
  * that is bundled with this package in the file LICENSE.txt.
  * It is also available through the world-wide-web at this URL:
  * http://www.gnu.org/licenses/gpl-3.0.txt
  */
+
 if ( ! defined( 'YITH_CTPW_VERSION' ) ) {
     exit( 'Direct access forbidden.' );
 }
@@ -16,22 +17,27 @@ if ( ! class_exists( 'YITH_Custom_Thankyou_Page' ) ) {
     /**
      * Main Plugin Class
      *
-     * @var string
-     * @since 1.0
-     * @author Armando Liccardo <armando.liccardo@yithemes.com>
+     * Initialize Admin and Frontend classes
+     *
+     * @class YITH_Custom_Thankyou_Page
+     * @package YITH Custom ThankYou Page for Woocommerce
+     * @author YITH
+     * @since 1.0.0
+     *
      */
     class YITH_Custom_Thankyou_Page {
 
         /**
          * Plugin Version
          *
-         * @var string plugin version
          * @since 1.0.0
+         * @var string
+         *
          */
         public $version = YITH_CTPW_VERSION;
 
         /**
-         * Main Instance
+         * Main Class Instance
          *
          * @var YITH_Custom_Thankyou_Page
          * @since 1.0.0
@@ -40,7 +46,7 @@ if ( ! class_exists( 'YITH_Custom_Thankyou_Page' ) ) {
         protected static $_instance = null;
 
         /**
-         * Main Admin Instance
+         * Admin class instance
          *
          * @var YITH_Custom_Thankyou_Page_Admin
          * @since 1.0.0
@@ -48,10 +54,10 @@ if ( ! class_exists( 'YITH_Custom_Thankyou_Page' ) ) {
         public $admin = null;
 
         /**
-         * Main Frontpage Instance
+         * Frontend class instance
          *
          * @var YITH_Custom_Thankyou_Page_Frontend
-         * @since 1.0
+         * @since 1.0.0
          */
         public $frontend = null;
 
@@ -59,13 +65,13 @@ if ( ! class_exists( 'YITH_Custom_Thankyou_Page' ) ) {
          * check if the plugin is activated or not
          *
          * @var bool
-         * @since 1.0
+         * @since 1.0.0
          */
         public $is_plugin_enabled = false;
 
 
         /**
-         * Construct
+         * Initialize Plugin
          *
          * @author Armando Liccardo <armando.liccardo@yithemes.com>
          * @since 1.0.0
@@ -75,6 +81,7 @@ if ( ! class_exists( 'YITH_Custom_Thankyou_Page' ) ) {
             $this->is_plugin_enabled = 'yes' == get_option( 'yith_ctpw_enable', 'no' );
 
             /* === Require Main Files === */
+            //APPLY_FILTER: yith_ctpw_require_class : load classes for the plugin : parameter array
             $require = apply_filters( 'yith_ctpw_require_class',
                 array(
                     'common'    => array(
@@ -82,7 +89,6 @@ if ( ! class_exists( 'YITH_Custom_Thankyou_Page' ) ) {
                     ),
                     'admin'     => array(
                         'includes/class.yith-custom-thankyou-page-admin.php',
-                      //  'includes/functions.yith-update.php' da verificare
                     ),
                     'frontend'  => array(
                         'includes/class.yith-custom-thankyou-page-frontend.php',
@@ -104,8 +110,9 @@ if ( ! class_exists( 'YITH_Custom_Thankyou_Page' ) ) {
         /**
          * Main plugin Instance
          *
-         * @return YITH_Custom_Thankyou_Page Main instance
+         * @return YITH_Custom_Thankyou_Page
          * @author Armando Liccardo <armando.liccardo@yithemes.com>
+         * @since 1.0.0
          */
         public static function instance() {
             if ( is_null( self::$_instance ) ) {
@@ -115,15 +122,12 @@ if ( ! class_exists( 'YITH_Custom_Thankyou_Page' ) ) {
         }
 
         /**
-         * Add the main classes file
          *
          * Include the admin and frontend classes
          *
-         * @param $main_classes array The required classes file path
-         *
+         * @param array $main_classes The required classes files path
          * @author Andrea Grillo <andrea.grillo@yithemes.com>
-         * @since  1.0
-         *
+         * @since  1.0.0
          * @return void
          * @access protected
          */
@@ -141,7 +145,7 @@ if ( ! class_exists( 'YITH_Custom_Thankyou_Page' ) ) {
          * Load plugin framework
          *
          * @author Andrea Grillo <andrea.grillo@yithemes.com>
-         * @since  1.0
+         * @since  1.0.0
          * @return void
          */
         public function plugin_fw_loader() {
@@ -155,12 +159,12 @@ if ( ! class_exists( 'YITH_Custom_Thankyou_Page' ) ) {
         }
 
         /**
-         * Class Initialization
+         * Classes Initialization
          *
-         * Instance the admin or frontend classes
+         * Initialize the admin or frontend classes
          *
          * @author Andrea Grillo <andrea.grillo@yithemes.com>
-         * @since  1.0
+         * @since  1.0.0
          * @return void
          * @access protected
          */
@@ -176,12 +180,12 @@ if ( ! class_exists( 'YITH_Custom_Thankyou_Page' ) ) {
         }
 
         /**
-         * Add a body class(es)
+         * Add body class(es)
          *
          * @param $classes The classes array
          *
          * @author Armando Liccardo <armando.liccardo@yithemes.com>
-         * @since 1.0
+         * @since 1.0.0
          * @return array
          */
         public function body_class( $classes ){

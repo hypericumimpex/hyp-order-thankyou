@@ -8,6 +8,7 @@ $order = wc_get_order(intval($_GET['order-received']));
 
 //DO_ACTION yith_ctpw_before_social_box: hook before the social box
 do_action('yith_ctpw_before_social_box');
+
 ?>
 <!-- Yith Custom Thank You Page Social Box -->
 <div id="yith-ctpw-social-box" class="yith-ctpw-tabs" style="display: none">
@@ -19,27 +20,27 @@ do_action('yith_ctpw_before_social_box');
 </h2>
 <?php /* socials tabs */ ?>
 <div class="yith-ctpw-tabs-nav">
-    <?php if ( ( !$is_shortcode && get_option('yith_ctpw_enable_fb_social_box','yes') == 'yes') || ( $is_shortcode && $social_box_info['facebook'] =='yes') ) { ?>
+    <?php if ( ( !$is_shortcode && get_option('yith_ctpw_enable_fb_social_box','yes') == 'yes') || ( $is_shortcode && yith_plugin_fw_is_true($social_box_info['facebook'])) ) { ?>
         <a href="#" class="yith-ctpw-tabs-nav__link is-active">
             <span><img src="<?php echo YITH_CTPW_ASSETS_URL . 'images/facebook.png'; ?>" /></span>
             <span><?php _e('Facebook','yith-custom-thankyou-page-for-woocommerce'); ?></span>
         </a>
     <?php }
-    if ( (!$is_shortcode && get_option('yith_ctpw_enable_twitter_social_box','yes') == 'yes') || ( $is_shortcode && $social_box_info['twitter'] =='yes') ) {
+    if ( (!$is_shortcode && get_option('yith_ctpw_enable_twitter_social_box','yes') == 'yes') || ( $is_shortcode && yith_plugin_fw_is_true($social_box_info['twitter'])) ) {
         ?>
         <a href="#" class="yith-ctpw-tabs-nav__link">
             <span><img src="<?php echo YITH_CTPW_ASSETS_URL . 'images/twitter.png'; ?>" /></span>
             <span><?php _e('Twitter','yith-custom-thankyou-page-for-woocommerce'); ?></span>
         </a>
     <?php }
-    if ( ( !$is_shortcode && get_option('yith_ctpw_enable_google_social_box','yes') == 'yes') || ( $is_shortcode && $social_box_info['google'] =='yes') ) {
+    if ( ( !$is_shortcode && get_option('yith_ctpw_enable_google_social_box','yes') == 'yes') || ( $is_shortcode && yith_plugin_fw_is_true($social_box_info['google'])) ) {
         ?>
         <a href="#" class="yith-ctpw-tabs-nav__link">
             <span> <img src="<?php echo YITH_CTPW_ASSETS_URL . 'images/google+.png'; ?>" /></span>
             <span><?php _e('Google +','yith-custom-thankyou-page-for-woocommerce'); ?></span>
         </a>
     <?php }
-    if ( (!$is_shortcode && get_option('yith_ctpw_enable_pinterest_social_box','yes') == 'yes') || ( $is_shortcode && $social_box_info['pinterest'] =='yes') ) {
+    if ( (!$is_shortcode && get_option('yith_ctpw_enable_pinterest_social_box','yes') == 'yes') || ( $is_shortcode && yith_plugin_fw_is_true($social_box_info['pinterest'])) ) {
         ?>
         <a href="#" class="yith-ctpw-tabs-nav__link">
             <span> <img src="<?php echo YITH_CTPW_ASSETS_URL . 'images/pinterest.png'; ?>" /></span>
@@ -51,7 +52,7 @@ do_action('yith_ctpw_before_social_box');
 <?php
 /*FACEBOOK Container *************************************************************************/
 
-if ( (!$is_shortcode && get_option('yith_ctpw_enable_fb_social_box','yes') == 'yes') || ( $is_shortcode && $social_box_info['facebook'] =='yes') ) : ?>
+if ( (!$is_shortcode && get_option('yith_ctpw_enable_fb_social_box','yes') == 'yes') || ( $is_shortcode && yith_plugin_fw_is_true($social_box_info['facebook'])) ) : ?>
 
     <div class="yith-ctpw-tab is-active">
         <div class="yith-ctpw-tab__content">
@@ -139,7 +140,7 @@ if ( (!$is_shortcode && get_option('yith_ctpw_enable_fb_social_box','yes') == 'y
 <?php endif; ?>
 <?php
 /* TWITTER  *************************************************************************/
-if ( (!$is_shortcode && get_option('yith_ctpw_enable_twitter_social_box','yes') == 'yes') || ( $is_shortcode && $social_box_info['twitter'] =='yes') ) : ?>
+if ( (!$is_shortcode && get_option('yith_ctpw_enable_twitter_social_box','yes') == 'yes') || ( $is_shortcode && yith_plugin_fw_is_true($social_box_info['twitter'])) ) : ?>
     <div class="yith-ctpw-tab">
         <div class="yith-ctpw-tab__content">
             <div id="yith-ctwp-social-slider" class="ctpw_twitter">
@@ -201,7 +202,7 @@ if ( (!$is_shortcode && get_option('yith_ctpw_enable_twitter_social_box','yes') 
 <?php endif; ?>
 <?php
 /* GOOGLE PLUS  *************************************************************************/
-if ( (!$is_shortcode && get_option('yith_ctpw_enable_google_social_box','yes') == 'yes' ) || ( $is_shortcode && $social_box_info['google'] =='yes') )  : ?>
+if ( (!$is_shortcode && get_option('yith_ctpw_enable_google_social_box','yes') == 'yes' ) || ( $is_shortcode && yith_plugin_fw_is_true($social_box_info['google'])) )  : ?>
     <div class="yith-ctpw-tab">
         <div class="yith-ctpw-tab__content">
             <div id="yith-ctwp-social-slider" class="ctpw_googleplus">
@@ -280,7 +281,7 @@ if ( (!$is_shortcode && get_option('yith_ctpw_enable_google_social_box','yes') =
 <?php endif; ?>
 <?php
 /* PINTEREST  *************************************************************************/
-if ( (!$is_shortcode && get_option('yith_ctpw_enable_pinterest_social_box','yes') == 'yes' ) || ( $is_shortcode && $social_box_info['pinterest'] =='yes') ) : ?>
+if ( (!$is_shortcode && get_option('yith_ctpw_enable_pinterest_social_box','yes') == 'yes' ) || ( $is_shortcode && yith_plugin_fw_is_true($social_box_info['pinterest'])) ) : ?>
     <div class="yith-ctpw-tab">
         <div class="yith-ctpw-tab__content">
             <div id="yith-ctwp-social-slider" class="ctpw_pinterest">

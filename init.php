@@ -5,10 +5,10 @@
 * Description: The <code><strong>HYP Order Thank You</strong></code> shows a Thank You page to users buying in your shop. The page can be customized also per single product and allows your customers to share their purchases on social networks. Excellent to loyalize your customers and show ad-hoc marketing campaigns! <a href="https://yithemes.com/" target="_blank">Find new awesome plugins by <strong>YITH</strong></a>
 * Author: Romeo C.
 * Text Domain: yith-custom-thankyou-page-for-woocommerce
-* Version: 1.1.0
+* Version: 1.1.4
 * Author URI: https://romeocovaci.com/
 * WC requires at least: 2.6.0
-* WC tested up to: 3.5.x
+* WC tested up to: 3.6.x
 */
 
 /*
@@ -30,8 +30,9 @@ if ( ! function_exists( 'yith_ctpw_woocommerce_admin_notice' ) ) {
     /**
      * Show notice if WooCommerce is not active
      *
-     * @author Armando Liccardo
+     * @author Armando Liccardo <armando.liccardo@yithemes.com>
      * @since  1.0.0
+     * @return void
      */
     function yith_ctpw_woocommerce_admin_notice() {
         ?>
@@ -49,7 +50,7 @@ if( ! function_exists( 'yit_deactive_free_version' ) ) {
 yit_deactive_free_version( 'YITH_CTPW_FREE_INIT', plugin_basename( __FILE__ ) );
 
 /* === DEFINE === */
-! defined( 'YITH_CTPW_VERSION' )            && define( 'YITH_CTPW_VERSION', '1.1.0' );
+! defined( 'YITH_CTPW_VERSION' )            && define( 'YITH_CTPW_VERSION', '1.1.4' );
 ! defined( 'YITH_CTPW_INIT' )               && define( 'YITH_CTPW_INIT', plugin_basename( __FILE__ ) );
 ! defined( 'YITH_CTPW_SLUG' )               && define( 'YITH_CTPW_SLUG', 'yith-custom-thank-you-page-for-woocommerce' );
 ! defined( 'YITH_CTPW_SECRETKEY' )          && define( 'YITH_CTPW_SECRETKEY', 'QOmXLhDfIvADBWnAMuzk' );
@@ -79,6 +80,7 @@ if ( ! function_exists( 'YITH_Custom_Thankyou_page' ) ) {
      * Unique access to instance of YITH_Custom_Thankyou_Page
      *
      * @return YITH_Custom_Thankyou_Page|YITH_Custom_Thankyou_Page_Premium
+     * @author Armando Liccardo <armando.liccardo@yithemes.com>
      * @since 1.0.0
      */
     function YITH_Custom_Thankyou_Page() {
@@ -94,6 +96,12 @@ if ( ! function_exists( 'YITH_Custom_Thankyou_page' ) ) {
 }
 
 if( ! function_exists( 'yith_ctpw_start' ) ){
+    /**
+     * Initialize the plugin
+     *
+     * @since 1.0.0
+     * @author Armando Liccardo <armando.liccardo@yithemes.com>
+     */
     function yith_ctpw_start() {
 
         if ( ! function_exists( 'WC' ) ) {

@@ -20,7 +20,7 @@ if ( !class_exists( 'YIT_Icons' ) ) {
      * Class to manage icons
      *
      * @class       YIT_Icons
-     * @package     Yithemes
+     * @package     YITH
      * @since       1.0.0
      * @author      Leanza Francesco <leanzafrancesco@gmail.com>
      *
@@ -1136,8 +1136,10 @@ if ( !class_exists( 'YIT_Icons' ) ) {
 
     }
 }
-function YIT_Icons() {
-    return YIT_Icons::get_instance();
+if( ! function_exists( 'YIT_Icons' ) ){
+	function YIT_Icons() {
+		return YIT_Icons::get_instance();
+	}
 }
 
 YIT_Icons();

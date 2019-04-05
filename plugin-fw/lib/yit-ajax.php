@@ -17,7 +17,7 @@ if ( !class_exists( 'YIT_Ajax' ) ) {
      * YIT Ajax
      *
      * @class      YIT_Ajax
-     * @package    Yithemes
+     * @package    YITH
      * @since      1.0
      * @author     Leanza Francesco <leanzafrancesco@gmail.com>
      */

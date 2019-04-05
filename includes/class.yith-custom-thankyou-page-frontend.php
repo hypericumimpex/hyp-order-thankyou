@@ -1,42 +1,49 @@
 <?php
-/*
- * This file belongs to the YIT Framework.
+/**
+ * This file belongs to the YIT Plugin Framework.
  *
  * This source file is subject to the GNU GENERAL PUBLIC LICENSE (GPL 3.0)
  * that is bundled with this package in the file LICENSE.txt.
  * It is also available through the world-wide-web at this URL:
  * http://www.gnu.org/licenses/gpl-3.0.txt
  */
+
+
 if ( ! defined( 'YITH_CTPW_VERSION' ) ) {
     exit( 'Direct access forbidden.' );
 }
 
 if ( ! class_exists( 'YITH_Custom_Thankyou_Page_Frontend' ) ) {
     /**
-     * YITH Custom Thankyou Page Frontend Class
+     * Frontend class
+     *
+     * The class manage all the frontend behaviors.
      *
      * @class      YITH_Custom_Thankyou_Page_Frontend
-     * @since      Version 1.0.0
-     * @author     Armando Liccardo <armando.liccardo@yithemes.com>
+     * @package    YITH Custom ThankYou Page for Woocommerce
+     * @since      1.0.0
+     * @author     YITH
      *
      */
 
     class YITH_Custom_Thankyou_Page_Frontend  {
         /**
-         * @var string store current wc version
+         * @var string current wc version
+         * @since      1.0.0
          */
         public $yith_ctw_wc_version = '';
 
         /**
-        * @var int store general thankyou page id
+        * @var int general thankyou page id
+        * @since      1.0.0
         */
         public $ctpw_general_page = '';
 
         /**
-         * Constructor
+         * Initialize frontend class
          *
          * @author Armando Liccardo <armando.liccardo@yithemes.com>
-         * @since 1.0
+         * @since 1.0.0
          */
         public function __construct(){
 
@@ -71,7 +78,7 @@ if ( ! class_exists( 'YITH_Custom_Thankyou_Page_Frontend' ) ) {
         }
 
         /**
-         * Get and store current woocommerce version
+         * Get current woocommerce version
          *
          * @since 1.0.0
          * @author Armando Liccardo <armando.liccardo@yithemes.com>
@@ -84,15 +91,15 @@ if ( ! class_exists( 'YITH_Custom_Thankyou_Page_Frontend' ) ) {
         }
 
         /**
-         * Redirect Function on Woocommerce Thank you page
+         * Redirect Function to Custom Thank you page
          *
          * @author Armando Liccardo <armando.liccardo@yithemes.com>
-         * @since 1.0
+         * @since 1.0.0
          * @return void
          * @param integer $order Order id.
          *
          */
-        public function yith_ctpw_redirect_after_purchase($order)
+        public function yith_ctpw_redirect_after_purchase( $order )
         {
 
              //if no global custom thank you page is set or no single product custom thank you page is set, not redirect needed
@@ -117,7 +124,7 @@ if ( ! class_exists( 'YITH_Custom_Thankyou_Page_Frontend' ) ) {
         /**
          * Custom Thank You Page Filter function
          *
-         * filter the wp content and if it is the custom selected page add the templates
+         * Filter the_content and if it is the custom selected page add the templates
          *
          * @author Armando Liccardo <armando.liccardo@yithemes.com>
          * @since 1.0.0
@@ -173,7 +180,9 @@ if ( ! class_exists( 'YITH_Custom_Thankyou_Page_Frontend' ) ) {
             if (!$order) {
                 // The order can't be returned by WooCommerce - Just say thank you
                 ?>
-                <p><?php echo apply_filters('woocommerce_thankyou_order_received_text', __('Thank you. Your order has been received.', 'woocommerce'), null); ?></p><?php
+                <p><?php
+                //APPLY_FILTER: woocommerce_thankyou_order_received_text: Change the Order Received Text
+                echo apply_filters('woocommerce_thankyou_order_received_text', __('Thank you. Your order has been received.', 'woocommerce'), null); ?></p><?php
             } else {
                 if ($order->has_status('failed')) {
                     // Order failed - Print error messages and ask to pay again
@@ -188,9 +197,9 @@ if ( ! class_exists( 'YITH_Custom_Thankyou_Page_Frontend' ) ) {
                      * @hooked yith_ctpw_header - 10
                      * @hooked yith_ctpw_table - 20
                      * @hooked yith_ctpw_customer_details - 30
-                     * #hooked yith_ctpw_social_box - 40
+                     * @hooked yith_ctpw_social_box - 40
                      */
-                    //DO_ACTION yith_ctpw_successful_ac: hook succesfull checkout: provide $order object
+                    //DO_ACTION yith_ctpw_successful_ac: hook successful checkout: provide $order object
                     do_action('yith_ctpw_successful_ac', $order);
 
                 }
@@ -223,7 +232,7 @@ if ( ! class_exists( 'YITH_Custom_Thankyou_Page_Frontend' ) ) {
         /**
          * Load the Order Header Table template file
          *
-         * @param object $order woocommerce $order
+         * @param object $order woocommerce order
          * @since 1.0.0
          * @author Armando Liccardo <armando.liccardo@yithemes.com>
          * @return void
@@ -236,7 +245,7 @@ if ( ! class_exists( 'YITH_Custom_Thankyou_Page_Frontend' ) ) {
         /**
          * Load the Order Cart Table template file
          *
-         * @param object $order woocommerce $order
+         * @param object $order woocommerce order
          * @since 1.0.0
          * @author Armando Liccardo <armando.liccardo@yithemes.com>
          * @return void
@@ -249,7 +258,7 @@ if ( ! class_exists( 'YITH_Custom_Thankyou_Page_Frontend' ) ) {
         /**
          * Load the Order Cutomer Details Table template file
          *
-         * @param object $order woocommerce $order
+         * @param object $order woocommerce order
          * @since 1.0.0
          * @author Armando Liccardo <armando.liccardo@yithemes.com>
          * @return void
@@ -262,7 +271,7 @@ if ( ! class_exists( 'YITH_Custom_Thankyou_Page_Frontend' ) ) {
         /**
          * Load the Order Failed template file
          *
-         * @param object $order woocommerce $order
+         * @param object $order woocommerce order
          * @since 1.0.0
          * @author Armando Liccardo <armando.liccardo@yithemes.com>
          * @return void
@@ -275,7 +284,7 @@ if ( ! class_exists( 'YITH_Custom_Thankyou_Page_Frontend' ) ) {
         /**
          * Add a woocommerce checkout body class(es) to Custom Thank you page
          *
-         * @param $classes The classes array
+         * @param $classes classes array
          *
          * @author Armando Liccardo <armando.liccardo@yithemes.com>
          * @since 1.0.0

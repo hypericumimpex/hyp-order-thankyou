@@ -20,7 +20,7 @@ if ( ! class_exists( 'YIT_Video' ) ) {
      * Class to manage the video from youtube and vimeo or other services
      *
      * @class YIT_Video
-     * @package    Yithemes
+     * @package    YITH
      * @since      1.0.0
      * @author     Antonino Scarfi' <antonino.scarfi@yithemes.com>
      *

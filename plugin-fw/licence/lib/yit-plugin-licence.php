@@ -19,7 +19,7 @@ if ( !class_exists( 'YIT_Plugin_Licence' ) ) {
      * Setting Page to Manage Plugins
      *
      * @class      YIT_Plugin_Licence
-     * @package    Yithemes
+     * @package    YITH
      * @since      1.0
      * @author     Andrea Grillo      <andrea.grillo@yithemes.com>
      */
@@ -74,16 +74,25 @@ if ( !class_exists( 'YIT_Plugin_Licence' ) ) {
             add_action( "wp_ajax_yith_activate-{$this->_product_type}", array( $this, 'activate' ) );
             add_action( "wp_ajax_yith_deactivate-{$this->_product_type}", array( $this, 'deactivate' ) );
             add_action( "wp_ajax_yith_update_licence_information-{$this->_product_type}", array( $this, 'update_licence_information' ) );
-            add_action( 'yit_licence_after_check', array( $this, 'licence_after_check' ) );
+            add_action( 'yit_licence_after_check', 'yith_plugin_fw_force_regenerate_plugin_update_transient' );
 
             /** @since 3.0.0 */
-            add_action( 'admin_notices', function () {
-                $this->activate_license_notice();
-            }, 15 );
+	        if( version_compare( PHP_VERSION, '7.0', '>=' ) ) {
+		        add_action( 'admin_notices', function () {
+			        $this->activate_license_notice();
+		        }, 15 );
+	        }
+
+	        else {
+		        add_action( 'admin_notices', array( $this, 'activate_license_notice' ), 15 );
+            }
         }
 
         private function _show_activate_license_notice() {
-            $show_license_notice = current_user_can( 'update_plugins' ) && ( !isset( $_GET[ 'page' ] ) || 'yith_plugins_activation' !== $_GET[ 'page' ] );
+            $current_screen      = function_exists( 'get_current_screen' ) ? get_current_screen() : false;
+            $show_license_notice = current_user_can( 'update_plugins' ) &&
+                                   ( !isset( $_GET[ 'page' ] ) || 'yith_plugins_activation' !== $_GET[ 'page' ] ) &&
+                                   !( $current_screen && method_exists( $current_screen, 'is_block_editor' ) && $current_screen->is_block_editor() );
             global $wp_filter;
 
             if ( isset( $wp_filter[ 'yith_plugin_fw_show_activate_license_notice' ] ) ) {
@@ -113,6 +122,7 @@ if ( !class_exists( 'YIT_Plugin_Licence' ) ) {
          * @since 3.0.0
          */
         public function activate_license_notice() {
+            return true;
             if ( $this->_show_activate_license_notice() ) {
                 $products_to_activate = $this->get_to_active_products();
                 if ( !!$products_to_activate ) {
@@ -121,27 +131,8 @@ if ( !class_exists( 'YIT_Plugin_Licence' ) ) {
                         if ( !empty( $product[ 'Name' ] ) )
                             $product_names[] = $product[ 'Name' ];
                     }
-
-                    if ( !!$product_names ) {
-                        $start          = '<span style="display:inline-block; padding:3px 10px; margin: 0 10px 10px 0; background: #f1f1f1; border-radius: 4px;">';
-                        $end            = '</span>';
-                        $product_list   = '<div>' . $start . implode( $end . $start, $product_names ) . $end . '</div>';
-                        $activation_url = self::get_license_activation_url();
-                        ?>
-                        <div class="notice notice-error">
-                            <p><strong>Warning!</strong> You didn't set license key for the following products:
-                                <?php echo $product_list ?>
-                                which means you're missing out on updates and support. <a href='<?php echo $activation_url ?>'>Enter your license key</a>, please.</p>
-                        </div>
-                        <?php
-                    }
                 }
             }
-        }
-
-        public function licence_after_check() {
-            /* === Regenerate Update Plugins Transient === */
-            YIT_Upgrade()->force_regenerate_update_transient();
         }
 
         /**
@@ -221,7 +212,7 @@ if ( !class_exists( 'YIT_Plugin_Licence' ) ) {
 /**
  * Main instance of plugin
  *
- * @return object
+ * @return YIT_Plugin_Licence object of license class
  * @since  1.0
  * @author Andrea Grillo <andrea.grillo@yithemes.com>
  */

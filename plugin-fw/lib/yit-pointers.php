@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  *
  * @class yit-pointers
- * @package    Yithemes
+ * @package    YITH
  * @since      Version 2.0.0
  * @author     Your Inspiration Themes
  *
@@ -27,7 +27,7 @@ if ( ! class_exists( 'YIT_Pointers' ) ) {
      * Initializes the new feature pointers.
      *
      * @class       YIT_Pointers
-     * @package     Yithemes
+     * @package     YITH
      * @since       1.0
      * @author      Your Inspiration Themes
      * @see         WP_Internal_Pointers
@@ -65,7 +65,7 @@ if ( ! class_exists( 'YIT_Pointers' ) ) {
             $this->_default_pointer['plugins'] = array(
                 'screen_id'  => 'plugins',
                 'options'    => array(
-                    'content'  => sprintf( '<h3> %s </h3> <p> %s </p> <p> %s <a href="http://yithemes.com/product-category/plugins/" target="_blank">Yithemes.com</a> %s
+                    'content'  => sprintf( '<h3> %s </h3> <p> %s </p> <p> %s <a href="http://yithemes.com/product-category/plugins/" target="_blank">yithemes.com</a> %s
                                   <a href="https://profiles.wordpress.org/yithemes/" target="_blank">Wordpress.org</a></p>',
                                 __( 'Plugins Activated', 'yith-plugin-fw' ),
                                 __( 'From now on, you can find all plugin options in YITH Plugins menu.
@@ -79,7 +79,7 @@ if ( ! class_exists( 'YIT_Pointers' ) ) {
             $this->_default_pointer['update'] = array(
                 'screen_id'  => 'update',
                 'options'    => array(
-                    'content'  => sprintf( '<h3> %s </h3> <p> %s </p> <p> %s <a href="http://yithemes.com/product-category/plugins/" target="_blank">Yithemes.com</a> %s
+                    'content'  => sprintf( '<h3> %s </h3> <p> %s </p> <p> %s <a href="http://yithemes.com/product-category/plugins/" target="_blank">yithemes.com</a> %s
                                   <a href="https://profiles.wordpress.org/yithemes/" target="_blank">Wordpress.org</a></p>',
                                 __( 'Plugins Upgraded', 'yith-plugin-fw' ),
                                 __( 'From now on, you can find the option panel of YITH plugins in YITH Plugins menu.

@@ -43,7 +43,7 @@ if ( !class_exists( 'YIT_Metabox' ) ) {
      * </code>
      *
      * @class YIT_Metaboxes
-     * @package    Yithemes
+     * @package    YITH
      * @since      1.0.0
      * @author     Emanuela Castorina <emanuela.castorina@yithemes.com>
      *

@@ -19,7 +19,7 @@ if ( !class_exists( 'YIT_Plugin_SubPanel' ) ) {
      * Setting Page to Manage Plugins
      *
      * @class      YIT_Plugin_Panel
-     * @package    Yithemes
+     * @package    YITH
      * @since      1.0
      * @author     Your Inspiration Themes
      */
@@ -88,7 +88,7 @@ if ( !class_exists( 'YIT_Plugin_SubPanel' ) ) {
          */
         public function add_setting_page() {
             global $admin_page_hooks;
-            $logo = YIT_CORE_PLUGIN_URL . '/assets/images/yithemes-icon.png';
+            $logo = yith_plugin_fw_get_default_logo();
 
             $admin_logo = function_exists( 'yit_get_option' ) ? yit_get_option( 'admin-logo-menu' ) : '';
 

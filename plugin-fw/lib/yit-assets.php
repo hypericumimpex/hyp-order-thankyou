@@ -15,7 +15,7 @@ if ( !class_exists( 'YIT_Assets' ) ) {
      * YIT Assets
      *
      * @class      YIT_Assets
-     * @package    Yithemes
+     * @package    YITH
      * @since      3.0.0
      * @author     Leanza Francesco <leanzafrancesco@gmail.com>
      */

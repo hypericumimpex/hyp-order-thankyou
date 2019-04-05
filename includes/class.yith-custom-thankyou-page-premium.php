@@ -13,15 +13,18 @@ if ( ! defined( 'YITH_CTPW_VERSION' ) ) {
 
 if ( ! class_exists( 'YITH_Custom_Thankyou_Page_Premium' ) ) {
     /**
-     * Main Plugin Class Premium
+     * Load Premium Classes
      *
-     * @since  Version 1.0.0
-     * @author Armando Liccardo <armando.liccardo@yithemes.com>
+     * @class       YITH_Custom_Thankyou_Page_Premium
+     * @package     YITH Custom ThankYou Page for Woocommerce Premium
+     * @since       1.0.0
+     * @author      YITH
+     *
      */
     class YITH_Custom_Thankyou_Page_Premium extends YITH_Custom_Thankyou_Page {
 
         /**
-         * Construct
+         * Load Premium Classes
          *
          * @author Armando Liccardo <armando.liccardo@yithemes.com>
          * @since 1.0.0
@@ -48,14 +51,13 @@ if ( ! class_exists( 'YITH_Custom_Thankyou_Page_Premium' ) ) {
         }
 
         /**
-         * Class Initializzation
+         * Class Initialization
          *
-         * Instance the admin or frontend classes
+         * Instance the admin or frontend premium classes
          *
          * @author Andrea Grillo <andrea.grillo@yithemes.com>
          * @since  1.0.0
          * @return void
-         * @access protected
          */
         public function init() {
             if ( is_admin() && ! ( defined( 'DOING_AJAX' ) && DOING_AJAX && isset( $_REQUEST['context'] ) && $_REQUEST['context'] == 'frontend' ) ) {
@@ -72,11 +74,12 @@ if ( ! class_exists( 'YITH_Custom_Thankyou_Page_Premium' ) ) {
         }
 
         /**
-         * Add premium files to Require array
+         * Add premium files to Required Files array
          *
-         * @param $require The require files array
+         * Load all the premium classes
          *
-         * @return Array
+         * @param array $require required files array
+         * @return array
          * @author Armando Liccardo <armando.liccardo@yithemes.com>
          * @since 1.0.0
          *
@@ -84,7 +87,6 @@ if ( ! class_exists( 'YITH_Custom_Thankyou_Page_Premium' ) ) {
         public function load_premium_classes( $require ){
             $require['admin'][]     = 'includes/class.yith-custom-thankyou-page-admin-premium.php';
             $require['frontend'][]  = 'includes/class.yith-custom-thankyou-page-frontend-premium.php';
-         //   $require['common'][]    = 'includes/functions.yith-ctpw-premium.php';
             return $require;
         }
 

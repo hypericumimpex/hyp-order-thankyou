@@ -14,25 +14,25 @@ if ( ! defined( 'YITH_CTPW_VERSION' ) ) {
 
 if ( ! class_exists( 'YITH_Custom_Thankyou_Page_Frontend_Premium' ) ) {
     /**
-     * YITH Custom Thankyou Page Frontend Premiuim Class
+     * Load Premium Frontend Settings and shortcodes
      *
      * @class      YITH_Custom_Thankyou_Page_Frontend_Premium
-     * @package    Yithemes
-     * @since      Version 1.0.0
-     * @author     Your Inspiration Themes
-     * @category   Class
-     *
-     * @property   string   $yith_ctw_wc_version The WC current version
-     * @property   int      $ctpw_general_page The general Thank You page id
+     * @package    YITH Custom ThankYou Page for Woocommerce
+     * @since      1.0.0
+     * @author     YITH
      *
      */
     class YITH_Custom_Thankyou_Page_Frontend_Premium extends YITH_Custom_Thankyou_Page_Frontend     {
 
         public $shortner = '';
+
+        /**
+         * @var string|YITH_Custom_Thankyou_Page_PDF
+         */
         public $YITH_PDF = '';
 
         /**
-         * Construct
+         * Initialize Premium settings
          *
          * @author Armando Liccardo <armando.liccardo@yithemes.com>
          * @since 1.0.0
@@ -45,11 +45,11 @@ if ( ! class_exists( 'YITH_Custom_Thankyou_Page_Frontend_Premium' ) ) {
 
             // check the parts options, if they are selected we show them
             //main filter is in YITH_Custom_Thankyou_Page_Frontend __constructor
-            //APPLY_FILTER: yith_ctpw_show_header_filter: show header part of thank you page: value can be true or false
+            //APPLY_FILTER: yith_ctpw_show_header_filter: Show header part of thank you page: value can be true or false
             if (get_option('yith_ctpw_show_header','yes') == 'no'){ add_filter('yith_ctpw_show_header_filter','__return_false' ); }
-            //APPLY_FILTER: yith_ctpw_show_table_filter: show order details table: value can be true or false
+            //APPLY_FILTER: yith_ctpw_show_table_filter: Show order details table: value can be true or false
             if (get_option('yith_ctpw_show_order_table','yes') == 'no'){ add_filter('yith_ctpw_show_table_filter','__return_false' ); }
-            //APPLY_FILTER: yith_ctpw_show_details_filter: show customer details table: value can be true or false
+            //APPLY_FILTER: yith_ctpw_show_details_filter: Show customer details table: value can be true or false
             if (get_option('yith_ctpw_show_customer_details','yes') == 'no'){ add_filter('yith_ctpw_show_details_filter','__return_false' ); }
 
             //if also one of order review parts is showed we add the styles from the settings */
@@ -94,7 +94,7 @@ if ( ! class_exists( 'YITH_Custom_Thankyou_Page_Frontend_Premium' ) ) {
             add_shortcode('yith_ctpw_customer_email', array($this,'yith_ctpw_customer_email_shortcode'));
 
             /* get PDF class instance */
-            //APPLY_FILTER: yith_ctpw_pdf_button: enable pdf button: value can be yes or no
+            //APPLY_FILTER: yith_ctpw_pdf_button: Enable pdf button: value can be yes or no
             $pdf_active = apply_filters( 'yith_ctpw_pdf_button', get_option('yith_ctpw_enable_pdf','no'));
             if ( class_exists('YITH_Custom_Thankyou_Page_PDF') &&  $pdf_active != 'no' ) {
                 $this->YITH_PDF = YITH_Custom_Thankyou_Page_PDF::instance();
@@ -105,23 +105,37 @@ if ( ! class_exists( 'YITH_Custom_Thankyou_Page_Frontend_Premium' ) ) {
 
             //if ctpw page we return true to wc checkout filters
             if ( isset($_GET['ctpw']) && isset($_GET['order-received']) && isset($_GET['key']) ) {
-                add_filter('woocommerce_is_order_received_page','__return_false', 99);
-                add_filter('woocommerce_is_checkout','__return_false', 99);
+                add_filter('woocommerce_is_order_received_page','__return_true', 99);
+                add_filter('woocommerce_is_checkout','__return_true', 99);
+
                 //WooCommerce Google Analytics Integration compatibility
                 if ( class_exists( 'WC_Google_Analytics' ) ) {
                     update_post_meta( $_GET['order-received'], '_ga_tracked', 0 );
                 }
-                update_post_meta( $_GET['order-received'], '_tracked', 0 );
+
+                //Add Compatibility with Enhanced E-commerce for Woocommerce store by Tavtic
+                if (class_exists('Enhanced_Ecommerce_Google_Analytics') && get_post_meta( $_GET['order-received'], '_yctpw_tatvic_ec_tracked', true ) != 1 ) {
+                    update_post_meta( $_GET['order-received'], '_tracked', 0 );
+                    add_action('yith_ctpw_successful_ac', array($this, 'tatvic_enhanced_woocommerce_script_compatibility'), 99);
+                    update_post_meta ( $_GET['order-received'], '_yctpw_tatvic_ec_tracked', 1);
+                }
+
+            }
+
+            //APPLY_FILTER yith_ctpw_block_thank_page_visibility: activate or not the visibility check on Thank you pages: works with yith_ctpw_thanks_pages_slugs_array flter
+            if ( apply_filters('yith_ctpw_block_thank_page_visibility', false ) ) {
+                //ADD_ACTION block_thankyou_page_visibility: redirect to url if the current page is custom thank you page and it is not called after order received
+                add_action( 'template_redirect', array( $this, 'block_thankyou_page_visibility' ) );
             }
         }
 
         /**
-         * Redirect Function
+         * Premium Redirect Function
          *
          * @author Armando Liccardo <armando.liccardo@yithemes.com>
          * @since 1.0.0
          *
-         * @param $order
+         * @param object $order wc order
          *
          */
         public function yith_ctpw_redirect_after_purchase($order)
@@ -174,7 +188,7 @@ if ( ! class_exists( 'YITH_Custom_Thankyou_Page_Frontend_Premium' ) ) {
                 }
                 $redirect .= 'order-received=' . absint($order) . '&key=' . $order_key . '&ctpw=' . $general_page;
 
-                //APPLY_FILTER: yith_ctpw_url_redirect: manage the url redirect
+                //APPLY_FILTER: yith_ctpw_url_redirect: Manage the url redirect: @param string $redirect
                 $redirect = apply_filters('yith_ctpw_url_redirect', $redirect);
                 wp_redirect($redirect);
                 return;
@@ -200,59 +214,59 @@ if ( ! class_exists( 'YITH_Custom_Thankyou_Page_Frontend_Premium' ) ) {
 
             //check for single product thankyou page
             //we only take in consideration the first product with a custom page, and that page will be the custom thank you page
-             foreach( $check_order->get_items() as $item ) {
-                     $_product = apply_filters('woocommerce_order_item_product', $check_order->get_product_from_item($item), $item);
-                     $sel_var_page = '';
-                     //get product id by wc version
-                     $pid = version_compare($this->yith_ctpw_check_woocommerce_version(), '2.7','>=') ? $_product->get_id() : $_product->id ;
+            foreach( $check_order->get_items() as $item ) {
+                $_product = apply_filters('woocommerce_order_item_product', $check_order->get_product_from_item($item), $item);
+                $sel_var_page = '';
+                //get product id by wc version
+                $pid = version_compare($this->yith_ctpw_check_woocommerce_version(), '2.7','>=') ? $_product->get_id() : $_product->id ;
 
 
-                     //check if selected to use wp page or external url
-                     $sel_page_url = get_post_meta($pid, "yith_ctpw_product_thankyou_page_url", true);
+                //check if selected to use wp page or external url
+                $sel_page_url = get_post_meta($pid, "yith_ctpw_product_thankyou_page_url", true);
 
-                     if ( $sel_page_url == 'ctpw_url' ) {
-                         $sel_page = trim(get_post_meta($pid, "yith_ctpw_product_thankyou_url", true));
-                     } else {
-                         $sel_page = get_post_meta($pid, "yith_product_thankyou_page", true);
-                     }
-
-
-                     //if it is a variable product check also if we have a custom page for variations
-                    $sel_var_page = $sel_var_page_p = 0;
-                     if ( $_product->get_type() == 'variation' ) {
-                         //get first the general product custom page or url
-                         $sel_page_url_var_p = get_post_meta($_product->get_parent_id(), "yith_ctpw_product_thankyou_page_url", true);
-                         if ( $sel_page_url_var_p == 'ctpw_url' ) {
-                             $sel_var_page_p = trim(get_post_meta($_product->get_parent_id(), "yith_ctpw_product_thankyou_url", true));
-                         } else {
-                             $sel_var_page_p = get_post_meta($_product->get_parent_id(), "yith_product_thankyou_page_variation", true);
-                         }
-
-                         //then check for variation
-                         $sel_page_url_var = get_post_meta($_product->get_id(), "yith_ctpw_product_thankyou_page_url", true);
-                         if ( $sel_page_url_var == 'ctpw_url' ) {
-                             $sel_var_page = trim(get_post_meta($_product->get_id(), "yith_ctpw_product_thankyou_url", true));
-                         } else {
-                             $sel_var_page = get_post_meta($_product->get_id(), "yith_product_thankyou_page_variation", true);
-                         }
-                     }
+                if ( $sel_page_url == 'ctpw_url' ) {
+                    $sel_page = trim(get_post_meta($pid, "yith_ctpw_product_thankyou_url", true));
+                } else {
+                    $sel_page = get_post_meta($pid, "yith_product_thankyou_page", true);
+                }
 
 
-                     //if a custom thank you page is set for variation we save it as thank you page for the product
-                     if ( $sel_var_page != '' && $sel_var_page != 0 ) {
-                         $sel_page = $sel_var_page;
-                     } else {
-                         if ($sel_var_page_p != '' || $sel_var_page_p != 0 ) {
-                             $sel_page = $sel_var_page_p;
-                         }
-                     }
+                //if it is a variable product check also if we have a custom page for variations
+                $sel_var_page = $sel_var_page_p = 0;
+                if ( $_product->get_type() == 'variation' ) {
+                    //get first the general product custom page or url
+                    $sel_page_url_var_p = get_post_meta($_product->get_parent_id(), "yith_ctpw_product_thankyou_page_url", true);
+                    if ( $sel_page_url_var_p == 'ctpw_url' ) {
+                        $sel_var_page_p = trim(get_post_meta($_product->get_parent_id(), "yith_ctpw_product_thankyou_url", true));
+                    } else {
+                        $sel_var_page_p = get_post_meta($_product->get_parent_id(), "yith_product_thankyou_page_variation", true);
+                    }
 
-                 //we have a product custom thank you page
-                 if ( ! empty($sel_page) || $sel_page != 0 ) {
-                                $single_p_thankyoupage = $sel_page;
-                                break;
-                 }
-             }
+                    //then check for variation
+                    $sel_page_url_var = get_post_meta($_product->get_id(), "yith_ctpw_product_thankyou_page_url", true);
+                    if ( $sel_page_url_var == 'ctpw_url' ) {
+                        $sel_var_page = trim(get_post_meta($_product->get_id(), "yith_ctpw_product_thankyou_url", true));
+                    } else {
+                        $sel_var_page = get_post_meta($_product->get_id(), "yith_product_thankyou_page_variation", true);
+                    }
+                }
+
+
+                //if a custom thank you page is set for variation we save it as thank you page for the product
+                if ( $sel_var_page != '' && $sel_var_page != 0 ) {
+                    $sel_page = $sel_var_page;
+                } else {
+                    if ($sel_var_page_p != '' || $sel_var_page_p != 0 ) {
+                        $sel_page = $sel_var_page_p;
+                    }
+                }
+
+                //we have a product custom thank you page
+                if ( ! empty($sel_page) || $sel_page != 0 ) {
+                    $single_p_thankyoupage = $sel_page;
+                    break;
+                }
+            }
 
             //check for category product thankyou page
             //we only take in consideration the first product with a custom category thankyou page
@@ -275,26 +289,26 @@ if ( ! class_exists( 'YITH_Custom_Thankyou_Page_Frontend_Premium' ) ) {
 
 
                 //we have categories check if for each if we have a custom thank you page or url
-                 if($cats){
-                     for ($i = 0; $i < count($cats); $i++)
-                     {
+                if($cats){
+                    for ($i = 0; $i < count($cats); $i++)
+                    {
 
-                         $cat_page_url = get_term_meta($cats[$i]->term_id,'yith_ctpw_or_url_product_cat_thankyou_page',true);
-                         $cat_url = get_term_meta($cats[$i]->term_id,'yith_ctpw_url_product_cat_thankyou_page',true);
-                         $cat_page = get_term_meta($cats[$i]->term_id,'yith_ctpw_product_cat_thankyou_page',true);
+                        $cat_page_url = get_term_meta($cats[$i]->term_id,'yith_ctpw_or_url_product_cat_thankyou_page',true);
+                        $cat_url = get_term_meta($cats[$i]->term_id,'yith_ctpw_url_product_cat_thankyou_page',true);
+                        $cat_page = get_term_meta($cats[$i]->term_id,'yith_ctpw_product_cat_thankyou_page',true);
 
-                         if ( $cat_page_url == 'ctpw_url' && isset($cat_url) && $cat_url != '' ) {
-                             $cat_thankyoupage = $cat_url;
-                             break;
-                         } elseif ((isset($cat_page) && $cat_page != 0 )) {
-                             $cat_thankyoupage = $cat_page;
-                             break;
-                         }
+                        if ( $cat_page_url == 'ctpw_url' && isset($cat_url) && $cat_url != '' ) {
+                            $cat_thankyoupage = $cat_url;
+                            break;
+                        } elseif ((isset($cat_page) && $cat_page != 0 )) {
+                            $cat_thankyoupage = $cat_page;
+                            break;
+                        }
 
-                         if ( $cat_thankyoupage != 0 || $cat_thankyoupage != '') { break; }
+                        if ( $cat_thankyoupage != 0 || $cat_thankyoupage != '') { break; }
 
-                     }//end for
-                 }
+                    }//end for
+                }
 
                 //the first category thank you page found we go out of the or cycle
                 if ( $cat_thankyoupage != 0 || $cat_thankyoupage != '') { break; }
@@ -395,13 +409,12 @@ if ( ! class_exists( 'YITH_Custom_Thankyou_Page_Frontend_Premium' ) ) {
             <?php
 
         }
+
         /**
          * Social Box function
          *
          * @author Armando Liccardo <armando.liccardo@yithemes.com>
          * @since 1.0.0
-         *
-         * param wc $order
          *
          */
         public function yith_ctpw_social_box() {
@@ -519,9 +532,7 @@ if ( ! class_exists( 'YITH_Custom_Thankyou_Page_Frontend_Premium' ) ) {
         }
 
         /**
-         * Show Products Shortcode
-         *
-         * this shortcode is used to print the upsells
+         * Up-Sells Shortcode
          *
          * @author Armando Liccardo <armando.liccardo@yithemes.com>
          * @since 1.0.0
@@ -531,7 +542,9 @@ if ( ! class_exists( 'YITH_Custom_Thankyou_Page_Frontend_Premium' ) ) {
         public function ctpw_show_products_shortcode($atts) {
             global $woocommerce_loop;
             //check if we are on Custom Thank you page
-            if ( ! isset($_GET['ctpw']) || $_GET['ctpw'] == '' ) {
+            //APPLY_FILTER: force to show upsells shortcode on normal pages: value can be true or false
+            $force = apply_filters('yit_ctpw_force_upsells', false);
+            if ( $force === false && ( ! isset($_GET['ctpw']) || $_GET['ctpw'] == '')  ) {
                 return;
             }
 
@@ -579,7 +592,7 @@ if ( ! class_exists( 'YITH_Custom_Thankyou_Page_Frontend_Premium' ) ) {
             }
 
 
-            //APPLY_FILTER: ctpw_shortcode_products_query: change the query for upsells products shortcode: provided values ( query args, shortcode atts, loop name )
+            //APPLY_FILTER: ctpw_shortcode_products_query: Manage the query args for upsells products shortcode: @params ( $query_args, $atts, $loop_name )
             $products                    = new WP_Query( apply_filters( 'ctpw_shortcode_products_query', $query_args, $atts, $loop_name ) );
             $columns                     = (absint( $atts['columns'] ) > 6) ? 6 : absint( $atts['columns'] ); //limit the number peer row to 6
             $woocommerce_loop['columns'] = $columns;
@@ -604,7 +617,7 @@ if ( ! class_exists( 'YITH_Custom_Thankyou_Page_Frontend_Premium' ) ) {
 
                 <?php do_action( "woocommerce_shortcode_after_{$loop_name}_loop" ); ?>
 
-            <?php
+                <?php
             } else {
                 do_action( "woocommerce_shortcode_{$loop_name}_loop_no_results" );
             }
@@ -631,7 +644,7 @@ if ( ! class_exists( 'YITH_Custom_Thankyou_Page_Frontend_Premium' ) ) {
 
 
         /**
-         * Upsell Section function
+         * Up-sells Section function
          *
          * @author Armando Liccardo <armando.liccardo@yithemes.com>
          * @since 1.0.0
@@ -648,10 +661,10 @@ if ( ! class_exists( 'YITH_Custom_Thankyou_Page_Frontend_Premium' ) ) {
             //if the ids are not prenset the upsells section is not printed
             if (empty($product_ids)) { return; }
 
-                if (is_array($product_ids)) {
-                    $product_ids = implode(',',$product_ids);
-                }
-                echo do_shortcode('[ctpw_show_products products_per_page="'.$items_per_page.'" columns="'. $columns .'" order="'.$order.'" orderby="'.$orderby.'" ids="'. $product_ids .'"]');
+            if (is_array($product_ids)) {
+                $product_ids = implode(',',$product_ids);
+            }
+            echo do_shortcode('[ctpw_show_products products_per_page="'.$items_per_page.'" columns="'. $columns .'" order="'.$order.'" orderby="'.$orderby.'" ids="'. $product_ids .'"]');
 
         }
 
@@ -732,49 +745,51 @@ if ( ! class_exists( 'YITH_Custom_Thankyou_Page_Frontend_Premium' ) ) {
         /**
          * Billing Username or User First Name Shortcode
          *
-         * Returns Billing Username of the customer
+         * Returns Billing Username or First Name of the customer
          *
          * @return string
          * @author Armando Liccardo <armando.liccardo@yithemes.com>
          * @since 1.0.1
          *
          */
-        public function yith_ctpw_customer_name_shortcode( $atts ) {
-            $atts = shortcode_atts( array(
+        public function yith_ctpw_customer_name_shortcode( $atts )
+        {
+            $atts = shortcode_atts(array(
                 'name' => ''
-            ), $atts );
+            ), $atts);
 
 
             $username = '';
 
-            //getting order to get products infos
-            $order = wc_get_order(intval($_GET['order-received']));
+            if (isset($_GET['order-received'])) {
+                //getting order to get products infos
+                $order = wc_get_order(intval($_GET['order-received']));
 
-            if( version_compare( $this->yith_ctw_wc_version, '2.7', "<" ) ) {
-                if ( $atts['name'] == 'first_name' ) {
-                    //get user first name
-                    $usr = wp_get_current_user();
-                    $username = $usr->first_name;
-                }
-                else {
-                    //get billing first name
-                    $username = $order->billing_first_name;
-                }
+                if (version_compare($this->yith_ctw_wc_version, '2.7', "<")) {
+                    if ($atts['name'] == 'first_name') {
+                        //get user first name
+                        $usr = wp_get_current_user();
+                        $username = $usr->first_name;
+                    } else {
+                        //get billing first name
+                        $username = $order->billing_first_name;
+                    }
 
 
-            } else {
-                //for wc >= 2.7
-                if ( $atts['name'] == 'first_name' ) {
-                    //get user first name
-                    $usr = wp_get_current_user();
-                    $username = $usr->first_name;
                 } else {
-                    //get billing first name
-                    $username = $order->get_billing_first_name();
+                    //for wc >= 2.7
+                    if ($atts['name'] == 'first_name') {
+                        //get user first name
+                        $usr = wp_get_current_user();
+                        $username = $usr->first_name;
+                    } else {
+                        //get billing first name
+                        $username = $order->get_billing_first_name();
+                    }
                 }
             }
 
-            //APPLY_FILTER yith_ctpw_customer_name: manage name of the user for Customer Name Shortcode: provided value ( username )
+            //APPLY_FILTER yith_ctpw_customer_name: Manage name of the user for Customer Name Shortcode: @param string $username
             return apply_filters('yith_ctpw_customer_name', $username);
         }
 
@@ -789,16 +804,18 @@ if ( ! class_exists( 'YITH_Custom_Thankyou_Page_Frontend_Premium' ) ) {
          *
          */
         public function yith_ctpw_customer_email_shortcode() {
+            $customer_email = '';
             //getting order to get products infos
-            $order = wc_get_order(intval($_GET['order-received']));
+            if (isset($_GET['order-received'])) {
+                $order = wc_get_order(intval($_GET['order-received']));
 
-            if( version_compare( $this->yith_ctw_wc_version, '2.7', "<" ) ) {
-                $customer_email =$order->billing_email;
-            } else {
-                $customer_email = $order->get_billing_email();
+                if (version_compare($this->yith_ctw_wc_version, '2.7', "<")) {
+                    $customer_email = $order->billing_email;
+                } else {
+                    $customer_email = $order->get_billing_email();
+                }
             }
-
-            //APPLY_FILTER yith_ctpw_customer_email: manage the customer email for Customer Email Shortcode: provided value ( customer email )
+            //APPLY_FILTER yith_ctpw_customer_email: Manage the customer email for Customer Email Shortcode: @param string $customer_email
             return  apply_filters('yith_ctpw_customer_email', $customer_email);
         }
 
@@ -814,15 +831,60 @@ if ( ! class_exists( 'YITH_Custom_Thankyou_Page_Frontend_Premium' ) ) {
          */
         public function yith_ctpw_order_number_shortcode() {
 
-            //getting order to get products infos
-            $order = wc_get_order(intval($_GET['order-received']));
+            $ordernumber = '';
+            if ( isset( $_GET['order-received'] ) ) {
+                //getting order to get products infos
+                $order = wc_get_order(intval($_GET['order-received']));
 
-            //APPLY_FILTER yith_ctpw_order_number: manage the order number for Order Number Shortcode: provided value ( order number )
-            $ordernumber = apply_filters('yith_ctpw_order_number',$order->get_order_number());
-
+                //APPLY_FILTER yith_ctpw_order_number: Manage the order number for Order Number Shortcode: @param string $ordernumber
+                $ordernumber = apply_filters('yith_ctpw_order_number',$order->get_order_number());
+            }
             return  $ordernumber;
+
+
         }
 
+        /**
+         * Redirect to url if the thank you page is loaded but it not after an order
+         *
+         * @since 1.1.3
+         * @author Armando Liccardo <armando.liccardo@yithemes.com>
+         * @return void
+         */
+        public function block_thankyou_page_visibility() {
+            global $post;
+            /* current page-post slug */
+            $page_slug = $post->post_name;
+
+            /* thank you pages list - page slugs */
+            //APPLY_FILTER yith_ctpw_thanks_pages_slugs_array: array of page slugs on which make the check
+            $thanks = apply_filters( 'yith_ctpw_thanks_pages_slugs_array', array() );
+
+            if ( count($thanks) > 0 ) {
+                if ( in_array($page_slug, $thanks ) && !isset($_GET['ctpw']) ) {
+                    //APPLY_FILTER yith_ctpw_redirect_on_block: url to redirect if Thank you page is loaded not after order received
+                    exit( wp_redirect( apply_filters('yith_ctpw_redirect_on_block',home_url()), 301 ) );
+                }
+            }
+
+        }
+
+        /**
+         * Add Compatibility with Enhanced E-commerce for Woocommerce store by Tavtic
+         * Print woocommerce enhanced script on Thank you page
+         *
+         * @param $order
+         * @since 1.1.4
+         * @author Armando Liccardo <armando.liccardo@yithemes.com>
+         * @return void
+         */
+        public function tatvic_enhanced_woocommerce_script_compatibility($order) {
+            $en = new Enhanced_Ecommerce_Google_Analytics;
+            $enp = new Enhanced_Ecommerce_Google_Analytics_Public($en->get_plugin_name(),$en->get_version());
+            $order_id = $order->get_id();
+            $enp->ecommerce_tracking_code( $order_id);
+            update_post_meta( $order_id, '_tracked', 0 );
+        }
 
     }//end class
 }

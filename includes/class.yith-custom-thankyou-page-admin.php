@@ -1,23 +1,28 @@
 <?php
-/*
- * This file belongs to the YIT Framework.
+/**
+ * This file belongs to the YIT Plugin Framework.
  *
  * This source file is subject to the GNU GENERAL PUBLIC LICENSE (GPL 3.0)
  * that is bundled with this package in the file LICENSE.txt.
  * It is also available through the world-wide-web at this URL:
  * http://www.gnu.org/licenses/gpl-3.0.txt
  */
+
 if ( ! defined( 'YITH_CTPW_VERSION' ) ) {
     exit( 'Direct access forbidden.' );
 }
 
 if ( ! class_exists( 'YITH_Custom_Thankyou_Page_Admin' ) ) {
     /**
-     * Basic Admin Class
+     * Admin Class
      *
-     * @since Version 1.0.0
-     * @package Yithemes
-     * @author Armando Liccardo <armando.liccardo@yithemes.com>
+     * The class manage all the admin behaviors.
+     *
+     * @class      YITH_Custom_Thankyou_Page_Admin
+     * @package    YITH Custom ThankYou Page for Woocommerce
+     * @since      1.0.0
+     * @author     YITH
+     *
      */
     class YITH_Custom_Thankyou_Page_Admin  {
         /**

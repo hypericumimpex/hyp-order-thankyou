@@ -50,22 +50,27 @@ if ( ! function_exists( 'yith_ctpw_list_all_pages' ) ) {
     }
 }
 
-/**
- * Add an edit link on Selected Thank you page on admin side
- *
- * @since 1.0.4
- * @author Armando Liccardo <armando.liccardo@yithemes.com>
- * @return string (or boolean if false)
- */
-/* add an edit link on Selected Thank you page on admin side */
-add_action('wp_ajax_yith_ctpw_get_edit_page_url', 'yith_ctpw_get_edit_page_url');
-function yith_ctpw_get_edit_page_url() {
-    $result = false;
-    if ( isset( $_POST['ctpw_id'])) {
-        if ( $_POST['ctpw_id'] != '' && $_POST['ctpw_id'] != 0 ) {
-            $result =  get_edit_post_link($_POST['ctpw_id']);
+
+if ( ! function_exists( 'yith_ctpw_get_edit_page_url' ) ) {
+    /**
+     * Add an edit link on Selected Thank you page on admin side
+     *
+     * @since 1.0.4
+     * @author Armando Liccardo <armando.liccardo@yithemes.com>
+     * @return string (or boolean if false)
+     */
+    /* add an edit link on Selected Thank you page on admin side */
+    add_action('wp_ajax_yith_ctpw_get_edit_page_url', 'yith_ctpw_get_edit_page_url');
+    function yith_ctpw_get_edit_page_url()
+    {
+        $result = false;
+        if (isset($_POST['ctpw_id'])) {
+            if ($_POST['ctpw_id'] != '' && $_POST['ctpw_id'] != 0) {
+                $result = get_edit_post_link($_POST['ctpw_id']);
+            }
         }
+        echo $result;
+        wp_die();
     }
-    echo $result;
-    wp_die();
 }
+

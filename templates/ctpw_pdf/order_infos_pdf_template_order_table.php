@@ -46,6 +46,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 
                     echo apply_filters( 'woocommerce_order_item_quantity_html', ' <strong class="product-quantity">' . sprintf( '&times; %s', $item['qty'] ) . '</strong>', $item );
 
+                    $formatted_meta_data = $item->get_formatted_meta_data();
+                    if ( $formatted_meta_data ) {
+                        echo '<ul class="yctpw-item-meta wc-item-meta">';
+
+                        foreach ($formatted_meta_data as $data => $dobj ) {
+                            echo '<li><strong class="wc-item-meta-label">'.$dobj->display_key.':</strong><p>'.$dobj->display_value.'</p></li>';
+                        }
+                        echo '</ul>';
+                    }
+
                     if ( $_product && $_product->exists() && $_product->is_downloadable() && $order->is_download_permitted() ) {
 
                         $download_files = $order->get_item_downloads( $item );

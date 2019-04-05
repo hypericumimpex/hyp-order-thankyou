@@ -15,10 +15,10 @@ if ( ! class_exists( 'YITH_Custom_Thankyou_Page_PDF' ) ) {
     /**
      * Print Order Details as PDF
      *
-     * @since 1.0.5
-     * @access protected
-     * @since  Version 1.0.5
-     * @author Armando Liccardo <armando.liccardo@yithemes.com>
+     * @class       YITH_Custom_Thankyou_Page_Premium
+     * @package     YITH Custom ThankYou Page for Woocommerce
+     * @author      YITH
+     * @since       1.0.5
      */
     class YITH_Custom_Thankyou_Page_PDF {
 
@@ -51,6 +51,7 @@ if ( ! class_exists( 'YITH_Custom_Thankyou_Page_PDF' ) ) {
 
             /* add ajax function callback to get pdf */
             add_action( 'wp_ajax_yith_ctpw_get_pdf', array( $this, 'yith_ctpw_get_pdf'));
+            add_action( 'wp_ajax_nopriv_yith_ctpw_get_pdf', array( $this, 'yith_ctpw_get_pdf'));
 
             //PDF document actions
             //pdf style

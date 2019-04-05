@@ -64,8 +64,8 @@ return array(
                 'title'   => _x( 'Order', 'Admin option', 'yith-custom-thankyou-page-for-woocommerce' ),
                 'type'    => 'select',
                 'options' => array(
-                    'asc' => 'asc',
-                    'desc' => 'desc'
+                    'asc' => __('ASC','yith-custom-thankyou-page-for-woocommerce'),
+                    'desc' => __('DESC','yith-custom-thankyou-page-for-woocommerce')
                     ),
                 'id'      => 'yith_ctpw_ups_order',
                 'default' => 4

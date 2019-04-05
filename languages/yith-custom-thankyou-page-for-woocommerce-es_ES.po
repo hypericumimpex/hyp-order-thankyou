@@ -1,8 +1,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Yith Custom Thank You Page for Woocommerce Premium\n"
-"POT-Creation-Date: 2018-08-21 14:49+0100\n"
-"PO-Revision-Date: 2018-08-21 15:00+0100\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/init\n"
+"POT-Creation-Date: 2019-02-20 13:47:23+00:00\n"
+"PO-Revision-Date: 2019-02-20 13:49+0000\n"
 "Last-Translator: \n"
 "Language-Team: Your Inspiration Web\n"
 "Language: es_ES\n"
@@ -17,34 +18,408 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: plugin-fw\n"
 "X-Poedit-SearchPathExcluded-1: plugin-fw_old\n"
 
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:137
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:85
+#, fuzzy
+#| msgid "Custom Thank You Page or Url"
+msgctxt "[gutenberg]: block name"
+msgid "Thank You Page Up-sells"
+msgstr "Perzonaliza página de agradecimiento"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:86
+#, fuzzy
+#| msgctxt "Admin option description"
+#| msgid "Check this option to show the PDF button on Custom Thank You Page"
+msgctxt "[gutenberg]: block description"
+msgid ""
+"With this block you can add Up-sells product on Custom Thank You Page...."
+msgstr ""
+"Marca esta opción para mostrar el botón de PDF en Custom Thank You Page"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:90
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:138
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:149
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:160
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:171
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:219
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:240
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:251
+#, fuzzy
+#| msgid "Custom Thank You page"
+msgctxt "[gutenberg]: keywords"
+msgid "Thank you page"
+msgstr "Personaliza página de agradecimiento"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:91
+#, fuzzy
+#| msgid "UpSells"
+msgctxt "[gutenberg]: keywords"
+msgid "Up-Sells"
+msgstr "Ventas adicionales"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:96
+msgctxt "[gutenberg]: block description"
+msgid "Columns Number"
+msgstr ""
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:107
+#, fuzzy
+#| msgctxt "Admin option"
+#| msgid "Order by"
+msgctxt "[gutenberg]: block description"
+msgid "Order by"
+msgstr "Pedido por"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:109
+#, fuzzy
+#| msgid "title"
+msgctxt "[gutenberg]: inspector description"
+msgid "Title"
+msgstr "título"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:110
+#, fuzzy
+#| msgid "random"
+msgctxt "[gutenberg]: inspector description"
+msgid "Random"
+msgstr "aleatorio"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:111
+#, fuzzy
+#| msgid "Date:"
+msgctxt "[gutenberg]: inspector description"
+msgid "Date"
+msgstr "Fecha:"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:117
+#, fuzzy
+#| msgctxt "Admin option"
+#| msgid "Order"
+msgctxt "[gutenberg]: block description"
+msgid "Order"
+msgstr "Pedido"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:119
+msgctxt "[gutenberg]: inspector description"
+msgid "ASC"
+msgstr ""
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:120
+msgctxt "[gutenberg]: inspector description"
+msgid "DESC"
+msgstr ""
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:126
+#, fuzzy
+#| msgid "Type product IDs separated by comma."
+msgctxt "[gutenberg]: inspector description"
+msgid "Product to show (write the ids separated by comma)"
+msgstr "Escribe el id de los productos separados por coma."
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:133
+msgctxt "[gutenberg]: block name"
+msgid "Thank You Page Order Overview Header"
+msgstr ""
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:134
+msgctxt "[gutenberg]: block description"
+msgid "Show Order Overview Header on Custom Thank You Page...."
+msgstr ""
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:139
+#, fuzzy
+#| msgid "Order Review"
+msgctxt "[gutenberg]: keywords"
+msgid "Order Overview"
+msgstr "Valoración del pedido"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:144
+#, fuzzy
+#| msgid "Custom Thank You Page or Url"
+msgctxt "[gutenberg]: block name"
+msgid "Thank You Page Order Table"
+msgstr "Perzonaliza página de agradecimiento"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:145
+#, fuzzy
+#| msgctxt "Admin option: Enable plugin"
+#| msgid "Enable Custom Thank You Page"
+msgctxt "[gutenberg]: block description"
+msgid "Show Order Table on Custom Thank You Page...."
+msgstr "Habilita personalizar página de agradecimiento"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:150
+#, fuzzy
+#| msgctxt "Admin option"
+#| msgid "Order by"
+msgctxt "[gutenberg]: keywords"
+msgid "Order Table"
+msgstr "Pedido por"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:155
+msgctxt "[gutenberg]: block name"
+msgid "Thank You Page Order Customers Details"
+msgstr ""
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:156
+msgctxt "[gutenberg]: block description"
+msgid "Show Order Customers Details on Custom Thank You Page...."
+msgstr ""
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:161
+#, fuzzy
+#| msgid "Customer details"
+msgctxt "[gutenberg]: keywords"
+msgid "Order Customer Details"
+msgstr "Detalles del cliente"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:166
+#, fuzzy
+#| msgctxt "Admin option"
+#| msgid "Enable Social Box"
+msgctxt "[gutenberg]: block name"
+msgid "Thank You Page Social Box"
+msgstr "Activar caja social"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:167
+#, fuzzy
+#| msgctxt "Admin option: Enable plugin"
+#| msgid "Enable Custom Thank You Page"
+msgctxt "[gutenberg]: block description"
+msgid "Show Social Box on Custom Thank You Page...."
+msgstr "Habilita personalizar página de agradecimiento"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:172
+msgctxt "[gutenberg]: keywords"
+msgid "Order Social Sharing"
+msgstr ""
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:177
+#, fuzzy
+#| msgid "Facebook"
+msgctxt "[gutenberg]: block field label"
+msgid "Facebook"
+msgstr "Facebook"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:180
+#, fuzzy
+#| msgctxt "Admin option"
+#| msgid "Show order table"
+msgctxt "[gutenberg]: Help text"
+msgid "Show facebook tab"
+msgstr "Mostrar la parte de la tabla de pedidos"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:181
+msgctxt "[gutenberg]: Help text"
+msgid "Hide facebook tab"
+msgstr ""
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:186
+#, fuzzy
+#| msgid "Twitter"
+msgctxt "[gutenberg]: block field label"
+msgid "Twitter"
+msgstr "Twitter"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:189
+#, fuzzy
+#| msgctxt "Admin option"
+#| msgid "Show order table"
+msgctxt "[gutenberg]: Help text"
+msgid "Show twitter tab"
+msgstr "Mostrar la parte de la tabla de pedidos"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:190
+msgctxt "[gutenberg]: Help text"
+msgid "Hide twitter tab"
+msgstr ""
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:195
+#, fuzzy
+#| msgid "Google"
+msgctxt "[gutenberg]: block field label"
+msgid "Google"
+msgstr "Google"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:198
+#, fuzzy
+#| msgctxt "Admin option"
+#| msgid "Show order table"
+msgctxt "[gutenberg]: Help text"
+msgid "Show google tab"
+msgstr "Mostrar la parte de la tabla de pedidos"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:199
+msgctxt "[gutenberg]: Help text"
+msgid "Hide google tab"
+msgstr ""
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:204
+#, fuzzy
+#| msgid "Pinterest"
+msgctxt "[gutenberg]: block field label"
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:207
+#, fuzzy
+#| msgctxt "Admin option"
+#| msgid "Show order table"
+msgctxt "[gutenberg]: Help text"
+msgid "Show pinterest tab"
+msgstr "Mostrar la parte de la tabla de pedidos"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:208
+msgctxt "[gutenberg]: Help text"
+msgid "Hide pinterest tab"
+msgstr ""
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:214
+#, fuzzy
+#| msgid "Custom Thank You Page or Url"
+msgctxt "[gutenberg]: block name"
+msgid "Thank You Page Customer Name"
+msgstr "Perzonaliza página de agradecimiento"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:215
+#, fuzzy
+#| msgctxt "Admin option: Enable plugin"
+#| msgid "Enable Custom Thank You Page"
+msgctxt "[gutenberg]: block description"
+msgid "Print Order Customer Name on Custom Thank You Page...."
+msgstr "Habilita personalizar página de agradecimiento"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:220
+msgctxt "[gutenberg]: keywords"
+msgid "Order User Name"
+msgstr ""
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:225
+msgctxt "[gutenberg]: block field label"
+msgid "Name Type"
+msgstr ""
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:227
+msgctxt "[gutenberg]: inspector description"
+msgid "Frist Name"
+msgstr ""
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:228
+#, fuzzy
+#| msgid "Billing address"
+msgctxt "[gutenberg]: inspector description"
+msgid "First Billing Name"
+msgstr "Dirección de facturación"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:235
+#, fuzzy
+#| msgid "Custom Thank You Page or Url"
+msgctxt "[gutenberg]: block name"
+msgid "Thank You Page Order Number"
+msgstr "Perzonaliza página de agradecimiento"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:236
+#, fuzzy
+#| msgctxt "Admin option: Enable plugin"
+#| msgid "Enable Custom Thank You Page"
+msgctxt "[gutenberg]: block description"
+msgid "Show The Order Number on Custom Thank You Page...."
+msgstr "Habilita personalizar página de agradecimiento"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:241
+#, fuzzy
+#| msgctxt "Admin option"
+#| msgid "Order by"
+msgctxt "[gutenberg]: keywords"
+msgid "Order Number"
+msgstr "Pedido por"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:246
+msgctxt "[gutenberg]: block name"
+msgid "Thank You Page Order Customer E-mail"
+msgstr ""
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:247
+msgctxt "[gutenberg]: block description"
+msgid "Show The Order Customer E-mail on Custom Thank You Page...."
+msgstr ""
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:252
+#, fuzzy
+#| msgid "Customer details"
+msgctxt "[gutenberg]: keywords"
+msgid "Order Customer E-mail"
+msgstr "Detalles del cliente"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:315
 msgctxt "Panel: page title"
 msgid "Priority"
 msgstr "Prioridad"
 
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:143
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:321
 msgctxt "Admin option: General Priority"
 msgid "Select General Priority to"
 msgstr "Seleccionar prioridad general para"
 
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:145
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:323
+#, fuzzy
+#| msgctxt "Admin option description: General Priority"
+#| msgid ""
+#| "Choose which custom Thank You page must have priority over others "
+#| "(General, Category or Product)"
 msgctxt "Admin option description: General Priority"
 msgid ""
 "Choose which custom Thank You page must have priority over others (General, "
-"Category or Product)"
+"Category, Product or Payment Method)"
 msgstr ""
 "Elige que página de agradecimiento debe tener prioridad sobre otras "
 "(general, categoría o producto)"
 
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:156
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:327
+#, fuzzy
+#| msgctxt "Panel: page title"
+#| msgid "General settings"
+msgid "General"
+msgstr "Ajustes generales"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:328
+#, fuzzy
+#| msgctxt "Admin option"
+#| msgid "Products per row"
+msgid "Product Category"
+msgstr "Productos por fila"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:329
+#: templates/ctpw_pdf/order_infos_pdf_template_order_table.php:10
+#: templates/woocommerce/yith_ctpw_table.php:18
+#: templates/woocommerce_2.6.x/yith_ctpw_table.php:11
+msgid "Product"
+msgstr "Producto"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:330
+#, fuzzy
+#| msgid "Payment Methods"
+msgid "Payment Method"
+msgstr "Métodos de pago"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:334
+#, fuzzy
+#| msgctxt "yith-custom-thankyou-page-for-woocommerce"
+#| msgid ""
+#| "If you have set different custom Thank You pages for products in the "
+#| "cart, select which settings should have\n"
+#| "                    priority over others (the custom Thank You page "
+#| "associated with single products or categories or the general one).\n"
+#| "                    If you set it to Products and there are more products "
+#| "with different Thank You pages, the one associated with the first\n"
+#| "                    product in the list will be shown."
 msgctxt "yith-custom-thankyou-page-for-woocommerce"
 msgid ""
 "If you have set different custom Thank You pages for products in the cart, "
-"select which settings should have\n"
+"select which settings should have\r\n"
 "                    priority over others (the custom Thank You page "
-"associated with single products or categories or the general one).\n"
+"associated with single products or categories or the general one).\r\n"
 "                    If you set it to Products and there are more products "
-"with different Thank You pages, the one associated with the first\n"
+"with different Thank You pages, the one associated with the first\r\n"
 "                    product in the list will be shown."
 msgstr ""
 "Si has establecido páginas de agradecimiento personalizadas diferentes para "
@@ -56,219 +431,241 @@ msgstr ""
 "la lista será mostrada\n"
 "                    "
 
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:172
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:350
 msgctxt "Section title in Settings"
 msgid "Order Details"
 msgstr "Detalles del pedido"
 
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:178
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:356
 msgctxt "Admin option"
 msgid "Show header section"
 msgstr "Mostrar parte del encabezado"
 
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:180
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:358
 msgctxt "Admin option description"
 msgid "This section shows a main order details"
 msgstr "Esta sección muestra una valoración de pedido simple"
 
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:187
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:365
 msgctxt "Admin option"
 msgid "Show order table"
 msgstr "Mostrar la parte de la tabla de pedidos"
 
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:189
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:367
 msgctxt "Admin option description"
 msgid "This section shows all order details"
 msgstr "Esta sección muestra los detalles del Cliente"
 
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:196
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:374
 msgctxt "Admin option"
 msgid "Show customer details"
 msgstr "Detalles del cliente"
 
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:199
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:377
 msgctxt "Admin option description"
 msgid "This section shows customer details"
 msgstr "Esta sección muestra los detalles del Cliente"
 
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:208
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:386
 #: panel/upsells-options.php:96
 msgid "Title font color"
 msgstr "Color de fuente de título"
 
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:215
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:393
 #: panel/upsells-options.php:104
 msgid "Title font size"
 msgstr "Tamaño de fuente del título"
 
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:226
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:404
 #: panel/upsells-options.php:115
 msgid "Title font weight"
 msgstr "Peso de la fuente del título"
 
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:328
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:426
+msgctxt "Section title in Settings"
+msgid "Uninstall"
+msgstr ""
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:432
+msgid "Delete plugin options on Uninstall"
+msgstr ""
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:434
+msgid ""
+"check this in order to delete plugin options saved in database on plugin "
+"uninstall"
+msgstr ""
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:495
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:643
+#, fuzzy
+#| msgid "Search for a product&hellip;"
+msgid "Select a page&hellip;"
+msgstr "Busca un producto&hellip;"
+
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:529
 msgctxt "Panel: page title"
 msgid "Payment Methods "
 msgstr "Métodos de pago"
 
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:356
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:688
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:779
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:866
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:932
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:557
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:889
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:980
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:1067
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:1133
 #: panel/settings-options.php:41
 msgid "Custom Wordpress Page"
 msgstr "Personaliza página de agradecimiento"
 
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:357
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:558
 #: panel/settings-options.php:42
 msgid "External URL"
 msgstr "URL externa"
 
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:365
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:566
 msgid "Select the General Thank You Page or External URL"
 msgstr ""
 "Selecciona la página general de agradecimiento para todos los productos"
 
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:382
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:583
 #: panel/settings-options.php:67
 msgid "write full url for ex: https://yithemes.com/"
 msgstr "Escribe la URL complete, ej: https://yithemes.com/"
 
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:468
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:669
 msgid "Social Box"
 msgstr "Caja social"
 
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:482
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:683
 msgid "UpSells"
 msgstr "Ventas adicionales"
 
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:496
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:697
 msgid "PDF"
 msgstr "PDF"
 
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:509
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:710
 msgid "Payment Methods"
 msgstr "Métodos de pago"
 
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:564
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:765
 msgid "Search for a product&hellip;"
 msgstr "Busca un producto&hellip;"
 
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:593
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:794
 msgid "Type product IDs separated by comma."
 msgstr "Escribe el id de los productos separados por coma."
 
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:651
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:872
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:939
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:852
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:1073
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:1140
 msgid "Custom Thank You Page"
 msgstr "Perzonaliza página de agradecimiento"
 
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:686
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:777
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:864
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:929
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:887
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:978
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:1065
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:1130
 msgid "Custom Thank You Page or Url"
 msgstr "Perzonaliza página de agradecimiento"
 
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:689
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:699
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:780
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:811
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:867
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:892
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:933
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:890
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:900
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:981
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:1012
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:1068
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:1093
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:1134
 msgid "Custom URL"
 msgstr "Personalizar CSS"
 
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:700
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:893
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:965
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:901
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:1094
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:1166
 msgid "write here the full url (http://...)"
 msgstr "Escribe aquí la URL completa (http://…)"
 
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:715
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:793
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:916
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:994
 msgid "Custom Thank You page"
 msgstr "Personaliza página de agradecimiento"
 
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:794
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:995
 msgid "Select the custom Thank You page!"
 msgstr "¡Selecciona la personalización de la página de agradecimiento!"
 
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:814
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:1015
 msgid "Write full URL ex: http://..."
 msgstr "Escribe la URL completa, ej: http://…"
 
-#: includes/class.yith-custom-thankyou-page-admin-premium.php:963
+#: includes/class.yith-custom-thankyou-page-admin-premium.php:1164
 msgid "Custom Thank You Url"
 msgstr "Perzonaliza página de agradecimiento"
 
-#: includes/class.yith-custom-thankyou-page-admin.php:96
+#: includes/class.yith-custom-thankyou-page-admin.php:101
 msgid "Settings"
 msgstr "Ajustes"
 
-#: includes/class.yith-custom-thankyou-page-admin.php:101
+#: includes/class.yith-custom-thankyou-page-admin.php:106
 msgid "Premium Version"
 msgstr "Versión Premium"
 
-#: includes/class.yith-custom-thankyou-page-admin.php:174
+#: includes/class.yith-custom-thankyou-page-admin.php:179
 msgid "Plugin documentation"
 msgstr "Documentación del plugin"
 
-#: includes/class.yith-custom-thankyou-page-admin.php:178
+#: includes/class.yith-custom-thankyou-page-admin.php:183
 msgid "Help Center"
 msgstr "Centro de ayuda"
 
-#: includes/class.yith-custom-thankyou-page-admin.php:185
+#: includes/class.yith-custom-thankyou-page-admin.php:190
 msgid "Discover the premium version"
 msgstr "Descubre la versión premium"
 
-#: includes/class.yith-custom-thankyou-page-admin.php:190
+#: includes/class.yith-custom-thankyou-page-admin.php:195
 msgid "Free VS Premium"
 msgstr "Free vs Premium"
 
-#: includes/class.yith-custom-thankyou-page-admin.php:195
+#: includes/class.yith-custom-thankyou-page-admin.php:200
 msgid "Premium live demo"
 msgstr "Demo en vivo Premium"
 
-#: includes/class.yith-custom-thankyou-page-admin.php:200
+#: includes/class.yith-custom-thankyou-page-admin.php:205
 msgid "WordPress support forum"
 msgstr "Foro de soporte WordPress"
 
-#: includes/class.yith-custom-thankyou-page-admin.php:205
-#: includes/class.yith-custom-thankyou-page-admin.php:217
+#: includes/class.yith-custom-thankyou-page-admin.php:210
+#: includes/class.yith-custom-thankyou-page-admin.php:222
 msgid "Changelog"
 msgstr "Changelog"
 
-#: includes/class.yith-custom-thankyou-page-admin.php:205
-#: includes/class.yith-custom-thankyou-page-admin.php:217
+#: includes/class.yith-custom-thankyou-page-admin.php:210
+#: includes/class.yith-custom-thankyou-page-admin.php:222
 msgid "current version"
 msgstr "versión actual"
 
-#: includes/class.yith-custom-thankyou-page-admin.php:212
+#: includes/class.yith-custom-thankyou-page-admin.php:217
 msgid "Support platform"
 msgstr "Plataforma de soporte"
 
-#: includes/class.yith-custom-thankyou-page-frontend-premium.php:624
+#: includes/class.yith-custom-thankyou-page-frontend-premium.php:629
 msgid "You may be interested in..."
 msgstr "Puedes estar interesado en..."
 
-#: includes/class.yith-custom-thankyou-page-frontend.php:176
+#: includes/class.yith-custom-thankyou-page-frontend.php:185
 #: templates/ctpw_pdf/order_infos_pdf_template_order_header.php:7
 #: templates/woocommerce/yith_ctpw_header.php:6
 #: templates/woocommerce_2.6.x/yith_ctpw_header.php:2
 msgid "Thank you. Your order has been received."
 msgstr "Gracias. Tu pedido ha sido recibido."
 
-#: includes/class.yith-custom-thankyou-page-pdf.php:146
-#: includes/class.yith-custom-thankyou-page-pdf.php:266
+#: includes/class.yith-custom-thankyou-page-pdf.php:147
+#: includes/class.yith-custom-thankyou-page-pdf.php:267
 #: panel/pdf-options.php:54
 msgid "Save as PDF"
 msgstr "Guardar como PDF"
 
-#: init.php:40
+#: init.php:41
 msgid ""
 "YITH Custom ThankYou page for Woocommerce is enabled but not effective. It "
 "requires WooCommerce in order to work."
@@ -635,6 +1032,14 @@ msgctxt "Admin option"
 msgid "Order"
 msgstr "Pedido"
 
+#: panel/upsells-options.php:67
+msgid "ASC"
+msgstr ""
+
+#: panel/upsells-options.php:68
+msgid "DESC"
+msgstr ""
+
 #: panel/upsells-options.php:75
 msgctxt "Admin option"
 msgid "Select products"
@@ -675,27 +1080,20 @@ msgstr "Total:"
 msgid "Payment method:"
 msgstr "Método de pago:"
 
-#: templates/ctpw_pdf/order_infos_pdf_template_order_table.php:10
-#: templates/woocommerce/yith_ctpw_table.php:18
-#: templates/woocommerce_2.6.x/yith_ctpw_table.php:11
-msgid "Product"
-msgstr "Producto"
-
 #: templates/ctpw_pdf/order_infos_pdf_template_order_table.php:11
 #: templates/woocommerce/yith_ctpw_table.php:19
 #: templates/woocommerce_2.6.x/yith_ctpw_table.php:12
 msgid "Total"
 msgstr "Total"
 
-#: templates/ctpw_pdf/order_infos_pdf_template_order_table.php:58
-#: templates/woocommerce/yith_ctpw_table.php:70
+#: templates/ctpw_pdf/order_infos_pdf_template_order_table.php:68
+#: templates/woocommerce/yith_ctpw_table.php:81
 #: templates/woocommerce_2.6.x/yith_ctpw_table.php:46
-#, php-format
 msgid "Download file %s"
 msgstr "Descargar archivo%s"
 
-#: templates/ctpw_pdf/order_infos_pdf_template_order_table.php:101
-#: templates/woocommerce/yith_ctpw_table.php:113
+#: templates/ctpw_pdf/order_infos_pdf_template_order_table.php:111
+#: templates/woocommerce/yith_ctpw_table.php:124
 msgid "Note:"
 msgstr "Nota:"
 
@@ -760,35 +1158,35 @@ msgstr "Pagar"
 msgid "My Account"
 msgstr "Mi cuenta"
 
-#: templates/woocommerce/yith_ctpw_social_box.php:18
+#: templates/woocommerce/yith_ctpw_social_box.php:19
 #: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:13
 msgid "Share on..."
 msgstr "Comparte en..."
 
-#: templates/woocommerce/yith_ctpw_social_box.php:25
+#: templates/woocommerce/yith_ctpw_social_box.php:26
 #: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:19
 msgid "Facebook"
 msgstr "Facebook"
 
-#: templates/woocommerce/yith_ctpw_social_box.php:32
+#: templates/woocommerce/yith_ctpw_social_box.php:33
 #: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:26
 msgid "Twitter"
 msgstr "Twitter"
 
-#: templates/woocommerce/yith_ctpw_social_box.php:39
+#: templates/woocommerce/yith_ctpw_social_box.php:40
 #: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:33
 msgid "Google +"
 msgstr "Google+"
 
-#: templates/woocommerce/yith_ctpw_social_box.php:46
+#: templates/woocommerce/yith_ctpw_social_box.php:47
 #: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:40
 msgid "Pinterest"
 msgstr "Pinterest"
 
-#: templates/woocommerce/yith_ctpw_social_box.php:65
-#: templates/woocommerce/yith_ctpw_social_box.php:153
-#: templates/woocommerce/yith_ctpw_social_box.php:213
-#: templates/woocommerce/yith_ctpw_social_box.php:292
+#: templates/woocommerce/yith_ctpw_social_box.php:66
+#: templates/woocommerce/yith_ctpw_social_box.php:154
+#: templates/woocommerce/yith_ctpw_social_box.php:214
+#: templates/woocommerce/yith_ctpw_social_box.php:293
 #: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:59
 #: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:142
 #: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:202
@@ -796,13 +1194,13 @@ msgstr "Pinterest"
 msgid "Select the product to share"
 msgstr "Selecciona el producto que quieres compartir"
 
-#: templates/woocommerce/yith_ctpw_social_box.php:106
-#: templates/woocommerce/yith_ctpw_social_box.php:108
-#: templates/woocommerce/yith_ctpw_social_box.php:184
-#: templates/woocommerce/yith_ctpw_social_box.php:242
-#: templates/woocommerce/yith_ctpw_social_box.php:246
-#: templates/woocommerce/yith_ctpw_social_box.php:328
-#: templates/woocommerce/yith_ctpw_social_box.php:330
+#: templates/woocommerce/yith_ctpw_social_box.php:107
+#: templates/woocommerce/yith_ctpw_social_box.php:109
+#: templates/woocommerce/yith_ctpw_social_box.php:185
+#: templates/woocommerce/yith_ctpw_social_box.php:243
+#: templates/woocommerce/yith_ctpw_social_box.php:247
+#: templates/woocommerce/yith_ctpw_social_box.php:329
+#: templates/woocommerce/yith_ctpw_social_box.php:331
 #: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:101
 #: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:103
 #: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:173
@@ -813,27 +1211,81 @@ msgstr "Selecciona el producto que quieres compartir"
 msgid "I've just purchased: "
 msgstr "Acabo de comprar: "
 
-#: templates/woocommerce/yith_ctpw_social_box.php:127
-#: templates/woocommerce/yith_ctpw_social_box.php:267
+#: templates/woocommerce/yith_ctpw_social_box.php:128
+#: templates/woocommerce/yith_ctpw_social_box.php:268
 #: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:116
 #: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:248
 msgid "Share"
 msgstr "Comparte"
 
-#: templates/woocommerce/yith_ctpw_social_box.php:185
+#: templates/woocommerce/yith_ctpw_social_box.php:186
 #: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:174
 msgid "characters left"
 msgstr "caracteres restantes"
 
-#: templates/woocommerce/yith_ctpw_social_box.php:188
+#: templates/woocommerce/yith_ctpw_social_box.php:189
 #: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:177
 msgid "Tweet"
 msgstr "Haz un Tweet"
 
-#: templates/woocommerce/yith_ctpw_social_box.php:353
+#: templates/woocommerce/yith_ctpw_social_box.php:354
 #: templates/woocommerce_2.6.x/yith_ctpw_social_box.php:325
 msgid "Pin it"
 msgstr "Fijar"
+
+#. Plugin Name of the plugin/theme
+#, fuzzy
+#| msgid "Custom Thank You Page or Url"
+msgid "YITH Custom ThankYou Page for Woocommerce Premium"
+msgstr "Perzonaliza página de agradecimiento"
+
+#. Plugin URI of the plugin/theme
+msgid ""
+"https://yithemes.com/themes/plugins/yith-custom-thank-you-page-for-"
+"woocommerce"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"The <code><strong>YITH Custom ThankYou Page for Woocommerce</strong></code> "
+"shows a Thank You page to users buying in your shop. The page can be "
+"customized also per single product and allows your customers to share their "
+"purchases on social networks. Excellent to loyalize your customers and show "
+"ad-hoc marketing campaigns! <a href=\"https://yithemes.com/\" target=\"_blank"
+"\">Get more plugins for your e-commerce on <strong>YITH</strong></a>"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "YITH"
+msgstr ""
+
+#. Author URI of the plugin/theme
+#, fuzzy
+#| msgid "write full url for ex: https://yithemes.com/"
+msgid "https://yithemes.com/"
+msgstr "Escribe la URL complete, ej: https://yithemes.com/"
+
+#, fuzzy
+#~| msgid ""
+#~ msgctxt "yith-custom-thankyou-page-for-woocommerce"
+#~ msgid ""
+#~ msgstr ""
+#~ "Project-Id-Version: Yith Custom Thank You Page for Woocommerce Premium\n"
+#~ "POT-Creation-Date: 2018-08-21 14:49+0100\n"
+#~ "PO-Revision-Date: 2018-08-21 15:00+0100\n"
+#~ "Last-Translator: \n"
+#~ "Language-Team: Your Inspiration Web\n"
+#~ "Language: es_ES\n"
+#~ "MIME-Version: 1.0\n"
+#~ "Content-Type: text/plain; charset=UTF-8\n"
+#~ "Content-Transfer-Encoding: 8bit\n"
+#~ "X-Generator: Poedit 2.0.7\n"
+#~ "X-Poedit-Basepath: .\n"
+#~ "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#~ "X-Poedit-KeywordsList: __;_x;_e;_X\n"
+#~ "X-Poedit-SearchPath-0: .\n"
+#~ "X-Poedit-SearchPathExcluded-0: plugin-fw\n"
+#~ "X-Poedit-SearchPathExcluded-1: plugin-fw_old\n"
 
 #~ msgid "Custom Wrodpress Page"
 #~ msgstr "Personaliza página de agradecimiento"
@@ -856,9 +1308,6 @@ msgstr "Fijar"
 #~ "Si se establecen los productos y hay dos o más productos con diferentes "
 #~ "páginas personalizadas de agradecimiento, se mostrará la página de "
 #~ "agradecimiento del primer producto en la lista"
-
-#~ msgid "Order Review"
-#~ msgstr "Valoración del pedido"
 
 #~ msgid "this section shows a full detailed order review"
 #~ msgstr "esta sección muestra una valoración de pedido completa"

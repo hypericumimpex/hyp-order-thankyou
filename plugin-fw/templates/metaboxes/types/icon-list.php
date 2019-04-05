@@ -11,7 +11,7 @@
 /**
  * Awesome Icon Admin View
  *
- * @package    Yithemes
+ * @package    YITH
  * @author Emanuela Castorina <emanuela.castorina@yithemes.com>
  * @since 1.0.0
  */

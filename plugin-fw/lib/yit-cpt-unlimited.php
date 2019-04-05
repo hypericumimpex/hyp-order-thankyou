@@ -14,7 +14,7 @@ if (!defined('ABSPATH')) {exit('Direct access forbidden.');
  * Manage the custom post types as Portfolio, Contact Forms and similar (called CPTU)
  *
  * @class YIT_CPT_Unlimited
- * @package	Yithemes
+ * @package	YITH
  * @since 2.0.0
  * @author Your Inspiration Themes
  *
